@@ -1,0 +1,58 @@
+site_name: Multi-Modal Molecular Analyses for Living Drugs
+use_directory_urls: true
+docs_dir: wiki/docs
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+      toc_depth: 2
+
+nav:
+  - Technologies:
+      - Home/Technologies/index.md
+  - Pipelines:
+      - Home/Pipelines/index.md
+      - LivingDrugOmics:
+          - Home/Pipelines/LivingDrugOmics-Pipeline/index.md
+          - Specific Usage:
+              - Params File: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/01_Userinput-The-Params-File.md
+              - Command Line Arguments: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/02_Command-Line-Arguments.md
+              - Output: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/03_Output.md
+          - Documentation:
+              - The main script: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/main.md
+              - Handling references: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/handle_references.md
+              - Secondary analysis: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/secondary_analysis.md
+              - Quality control: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/quality_control.md
+  - Resources:
+      - Home/Resources/index.md
+      - CAR Constructs: Home/Resources/CAR-constructs.md
+      - Vector Systems: Home/Resources/Vector-systems.md
+
+theme:
+  name: "material"
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - toc.integrate
+  logo: uploads/Logo_light.png
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fraunhofer-izi
+  generator: false

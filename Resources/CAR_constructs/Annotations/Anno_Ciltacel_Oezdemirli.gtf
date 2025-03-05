@@ -1,0 +1,8 @@
+ciltacel	AddedGene	exon	1	63	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8alpha_signal_peptide";
+ciltacel	AddedGene	exon	64	420	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "BCMA_binding_VHH1";
+ciltacel	AddedGene	exon	421	435	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "G4S_linker";
+ciltacel	AddedGene	exon	436	789	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "BCMA_binding_VHH2";
+ciltacel	AddedGene	exon	790	930	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8alpha_Hinge";
+ciltacel	AddedGene	exon	931	1002	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8alpha_transmembrane";
+ciltacel	AddedGene	exon	1003	1128	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "TNFRSF9_Cytoplasmic";
+ciltacel	AddedGene	exon	1129	1467	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD247_Cytoplasmic";

@@ -1,0 +1,6 @@
+Hu19CD828Z	AddedGene	transcript	1	1509	.	+	.	gene_id "Hu19CD828Z"; transcript_id "Hu19CD828Z"; gene_name "Hu19CD828Z"; gene_type "protein_coding"; transcript_type "protein_coding";
+Hu19CD828Z	AddedGene	exon	1	63	.	+	.	gene_id "Hu19CD828Z";transcript_id "Hu19CD828Z";gene_name "Hu19CD828Z";gene_type "protein_coding";transcript_type "protein_coding";exon_number 1;exon_id "Signal peptide";
+Hu19CD828Z	AddedGene	exon	115	336	.	+	.	gene_id "Hu19CD828Z";transcript_id "Hu19CD828Z";gene_name "Hu19CD828Z";gene_type "protein_coding";transcript_type "protein_coding";exon_number 2;exon_id "IGV light chain";
+Hu19CD828Z	AddedGene	exon	338	441	.	+	.	gene_id "Hu19CD828Z";transcript_id "Hu19CD828Z";gene_name "Hu19CD828Z";gene_type "protein_coding";transcript_type "protein_coding";exon_number 3;exon_id "Linker";
+Hu19CD828Z	AddedGene	exon	490	735	.	+	.	gene_id "Hu19CD828Z";transcript_id "Hu19CD828Z";gene_name "Hu19CD828Z";gene_type "protein_coding";transcript_type "protein_coding";exon_number 4;exon_id "IGV heavy chain";
+Hu19CD828Z	AddedGene	exon	967	1509	.	+	.	gene_id "Hu19CD828Z";transcript_id "Hu19CD828Z";gene_name "Hu19CD828Z";gene_type "protein_coding";transcript_type "protein_coding";exon_number 5;exon_id "CD8a Transmembran domain";

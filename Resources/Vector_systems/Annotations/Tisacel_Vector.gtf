@@ -1,0 +1,12 @@
+tisacel	AddedGene	transcript	1	9174	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding";
+tisacel	AddedGene	exon	2840	3067	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "RSV's U3";
+tisacel	AddedGene	exon	3068	3165	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 2; exon_id "HIV R repeat";
+tisacel	AddedGene	exon	3166	3249	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 3; exon_id "HIV U5 Repeat";
+tisacel	AddedGene	exon	3257	4633	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 4; exon_id "Partial Gag/Pol";
+tisacel	AddedGene	exon	4638	5184	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 4; exon_id "cPPT";
+tisacel	AddedGene	exon	5201	6378	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 5; exon_id "EFA1 alpha promoter";
+tisacel	AddedGene	exon	6391	7849	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 5; exon_id "CD19-BBzeta CAR";
+tisacel	AddedGene	exon	7858	8446	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 11; exon_id "WPRE";
+tisacel	AddedGene	exon	7859	8449	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 12; exon_id "Hu Woodchuck PRE";
+tisacel	AddedGene	exon	8586	8683	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 13; exon_id "HIV R repeat";
+tisacel	AddedGene	exon	8684	8767	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 14; exon_id "HIV U5 Repeat";
