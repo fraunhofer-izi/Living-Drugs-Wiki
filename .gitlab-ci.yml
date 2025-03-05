@@ -2,6 +2,7 @@ image: python:3.8-buster
 
 before_script:
   - pip install mkdocs mkdocs-material
+  - export PATH=$PATH:$HOME/.local/bin
 
 stages:
   - test
