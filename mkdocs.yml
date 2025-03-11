@@ -43,7 +43,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - toc.integrate
-  logo: uploads/Logo_light.png
+  logo: images/Logo_light.png
 
 extra_css:
   - stylesheets/extra.css

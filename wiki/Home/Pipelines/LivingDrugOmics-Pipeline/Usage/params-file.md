@@ -7,6 +7,7 @@ As this pipeline supports the analysis of common 10x Genomics libraries for sing
 The references are provided through a series of different parameters. If you are interested in how the reference is built, read [this](../Documentation/reference_building.md)
 
 Gene Expression:
+
 - `gene_expression_reference: <path>` - A prebuilt 10xGenomics compatible gene expression reference.
 
 - `gene_expression_reference_version: <'2020'/'2024'>` - Version of the reference building script to use - default: `'2024'`
@@ -20,9 +21,11 @@ Gene Expression:
 - `gene_expression_car_gtf: <path>` - CAR annotation to add to gene expression reference at runtime.
 
 VDJ:
+
 - `vdj_reference: <path>` - A prebuilt 10xGenomics compatible VDJ reference.
 
 Feature Barcoding:
+
 - `feature_reference: <path>`: A prebuilt 10xGenomics compatible feature reference.
 
 These parameters can be put into the config like this:
@@ -38,6 +41,7 @@ Note that only the references that will actually be used are necessary. For inst
 Regarding the `gene_expression_*` parameters, it is important to understand that the behavior of the pipeline changes depending on the parameters provided. This is because the pipeline can build a gene expression reference at runtime if the appropriate files are provided (at least `gene_expression_source_fa` and `gene_expression_source_gtf`). If `gene_expression_reference` is set then the parameters `gene_expression_source_fa` and `gene_expression_source_gtf` are ignored, as it would be unnecessary to build a new reference if a pre-built reference is provided. The `gene_expression_car_fa` and `gene_expression_car_gtf` parameters also come into play when building a **custom reference (e.g. for detection of CAR mapping reads)**, as they are concatenated with their source counterparts if set. However, they are not simply ignored when `gene_expression_reference` is set. This is useful if you have a prebuilt custom reference with a concatenated CAR construct because in order for the pipeline to build metrics around the CAR construct it needs the unconcatenated construct. To do this just provide both `gene_expression_reference` as well as `gene_expression_car_fa` and `gene_expression_car_gtf`.
 
 ## Samples
+
 Unlike other parameters, the `samples` parameter is a list of maps. Each sample consists of the attributes `name` and `libraries`. The `name` attribute is an identifier for the sample and is used when naming the output. `libraries`, on the other hand, is, again, a list of maps. Each entry in `libraries` represents a 10x Genomics library and must include the fields `fastq_path`, `fastq_id`, and `feature_types`. These fields correspond to the [definitions used by Cell Ranger Multi](https://www.10xgenomics.com/support/software/cell-ranger/latest/advanced/cr-multi-config-csv-opts#libraries). When compiled, the value of `samples` might look like this:
 
 ```yaml
