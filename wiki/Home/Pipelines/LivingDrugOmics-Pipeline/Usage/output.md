@@ -1,48 +1,61 @@
 # Output
 ## Where to find output
-The directory of the output can be adjusted using the `outdir` parameter. If this parameter is not overridden via the parameters file or command line arguments, the output will be written to `car-flow/output`.
+The directory of the output can be adjusted using the `outdir` parameter. If this parameter is not overridden using the [params-file](./params-file.md) or command line arguments, the output will be written to `${projectDir}/output`.
 
 ## Structure of output
-Each pipeline run generates a dedicated subdirectory within the output directory, named according to the run's name.
-The final outputs of the pipeline (e.g., Seurat Object, MultiQC Report) are organized into their respective folders.
-Sample-specific results (such as Cell Ranger outputs or FastQC reports) are stored in subdirectories named after the corresponding sample.
+After successful completion of the pipeline you should see the following directories in the output directory:
 
-### Results
+- `gene_expression_reference`
 
-- **`*_reference`/**: Directory for each reference used in the pipeline
+- `cellranger_multi`
 
-- **`seurat_merged.Rds`**: Seurat object including results from the Space Ranger multi. Stores integrated single-cell RNA-seq data for downstream analysis.
+- `seurat_object`
 
-- **`multiqc/`**: Aggregated MultiQC report for single-cell sequencing data.
+- `quarto`
 
-- **`pipeline_info/`**: Nextflow pipeline log data. Contains logs and information related to the execution of the Nextflow pipeline.
+- `fastqc`
 
-### Sample specific output 
+- `fastq_screen`
 
-- **`fastqc/`**  
-  FastQC report for each FastQ file:  
-  Performs quality control checks on raw sequence data.
+- `multiqc`
 
-- **`fastqs/`**  
-  FastScreen output:  
-  Verifies that sequencing runs contain the expected types of sequences by testing against genomes in `car-flow/assets/fastq_databases`.
+- `pipeline_info`
 
-- **`multi_out/`**  
-  [Cellranger output](https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/running-pipelines/cr-3p-multi):  
-  Contains the output from the Cell Ranger multi pipeline.
- 
----
+Each directory holds the pipeline output of the respective process. Processes that run per-sample are seperated into subdirectories named according to the sample name.
 
-## Seurat object
-The pipeline creates a merged Seurat object (`seurat_merged.Rds`), which includes all samples and their respective data types generated using 10x Genomics libraries.
+## Logging 
+The `pipeline_info` directory holds Nextflow pipeline log data.
+
+## Quality Control results
+### FastQC
+The `fastqc` directory holds the per-sample output directories of the `FASTQC` proccesses containing a FastQC report for each sample.
+
+### FastQ Screen
+The `fastq_screen` directory hold the per-sample output directories of the `FASTQ_SCREEN` processes verifying sequence runs contain the expected sequences by testing against genomes in `assets/fastq_databases`
+
+### MultiQC
+The `multiqc` directory hlolds the output of the `MULTIQC` process including a summary of the FastQC and FastQ Screen results.
+
+## Analysis results
+### Gene Expression reference
+The `gene_expression_reference` directory holds the output of the `BUILD_GEX_REFERENCE` process that is run when you build a reference at runtime. Using the output of this process instead of regenerating the reference every time you run the pipeline is a great way to reduce runtime and computing power.
+
+### CellRanger Multi
+The `cellranger_multi` directory holds the per-sample output directories of the `CELLRANGER_MULTI` process.
+
+### Quarto
+TODO
+
+### Seurat object
+The `seurat_object` directory holds the output of the `SEURAT_OBJECT` process - more specifically: the seurat object itself. A merged Seurat object (`seurat_merged.Rds`), which includes all samples and their respective data types generated using 10x Genomics libraries.
 
 Gene expression data is stored in an assay called "RNA," while Antibody Capture information is stored in an additional assay called "ADT."
 
 Additional information is included as metadata, comprising quality scores, the abundance of mitochondrial and ribosomal genes, cell cycle scores, and doublet removal information.
 
-This is a complete list of all metadata information:
+Here is a complete list of all metadata information:
 
-### General Information
+#### General Information
 
 - **`orig.ident`**  
     - **Type**: Factor  
@@ -64,7 +77,7 @@ This is a complete list of all metadata information:
     - **Type**: Integer  
         - Description: The number of unique features (protein markers) detected in the ADT assay for each cell.
 
-### Doublet Removal Scores
+#### Doublet Removal Scores
 
 - **`scDblFinder_score`**  
     - **Type**: Numeric  
@@ -74,7 +87,7 @@ This is a complete list of all metadata information:
     - **Type**: Factor  
         - Description: Classification of cells by `scDblFinder` as either "singlet" or "doublet".
 
-### Annotation Based on Raw Counts
+#### Annotation Based on Raw Counts
 
 - **`CD4CD8_BY_EXPRS`**  
     - **Type**: Factor  
@@ -88,7 +101,7 @@ This is a complete list of all metadata information:
     - **Type**: Factor  
         - Description: Annotation of CAR-T cells based on chimeric antigen receptor (CAR) expression.
 
-### UCell Enrichment Scores (scGate-Based Annotation)
+#### UCell Enrichment Scores (scGate-Based Annotation)
 
 - **`<CellType>_UCell`**  
     - **Type**: Numeric  
@@ -103,7 +116,7 @@ This is a complete list of all metadata information:
             - `Fibroblast_UCell`
             - `Epithelial_UCell`, etc.
 
-### Cell Type Information from scGate
+#### Cell Type Information from scGate
 
 - **`is.pure_<CellType>`**  
     - **Type**: Logical  
@@ -166,7 +179,7 @@ This is a complete list of all metadata information:
     - **Type**: Numeric  
         - Description: UCell-based cell cycle score representing gene set enrichment for cell cycle-related genes.
 
-### Clonality and VDJ Information (if VDJ)
+#### Clonality and VDJ Information (if VDJ)
 
 - **`CTgene`**  
     - **Type**: Character  
