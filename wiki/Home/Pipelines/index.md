@@ -38,7 +38,7 @@ As CAR T-cell therapies continue to expand, careful monitoring and tailored comp
 
     ---
 
-    ![Integration Site](../../uploads/ISA.png)
+    ![Integration Site](../../images/ISA.png)
     
     [:arrow_right: Coming Soon]()
 
@@ -46,4 +46,4 @@ As CAR T-cell therapies continue to expand, careful monitoring and tailored comp
 
 ---
 
-[Visit our GitHub Repository 🚀](https://github.com/fraunhofer-izi)
+[Visit our GitHub Repository :rocket:](https://github.com/fraunhofer-izi)

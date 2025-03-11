@@ -1,12 +1,10 @@
 # User Input - The Params File
-User input is primarily passed as a `.yaml` or `.json` file containing the required parameters. 
-This file is usually referred to as the `params-file`.
-Normally, the parameters in the file are listed in a flat structure without branches.
+User input is primarily passed as a `.yaml` or `.json` file containing the required parameters. This file is referred to as the `params-file`. Normally, the parameters in the file are listed in a flat structure without branches.
 
 As this pipeline supports the analysis of common 10x Genomics libraries for single-cell (immune profiling) by using Cell Ranger multi please refer to the original website for more information: [Cell Ranger multi 3'](https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/running-pipelines/cr-3p-multi) and [Cell Ranger multi 5' immune profiling](https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/running-pipelines/cr-5p-multi).
 
 ## References
-The references are provided through a series of different parameters. 
+The references are provided through a series of different parameters. If you are interested in how the reference is build read [this](../Documentation/reference_building.md)
 
 Gene Expression:
 - `gene_expression_reference`: A prebuilt 10xGenomics compatible gene expression reference.
