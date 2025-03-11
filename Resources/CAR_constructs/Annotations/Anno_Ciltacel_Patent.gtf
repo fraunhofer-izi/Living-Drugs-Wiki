@@ -1,0 +1,7 @@
+ciltacel	AddedGene	exon	1	63	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8SP";
+ciltacel	AddedGene	exon	64	420	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "anti-BCMA-Vh";
+ciltacel	AddedGene	exon	421	435	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "4GS-linker";
+ciltacel	AddedGene	exon	436	789	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "anti-BCMA-Vl";
+ciltacel	AddedGene	exon	789	892	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8HTMD";
+ciltacel	AddedGene	exon	997	1122	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD137SD";
+ciltacel	AddedGene	exon	1123	1461	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD3zSD";

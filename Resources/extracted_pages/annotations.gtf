@@ -1,0 +1,2 @@
+query	AddedGene	exon	64	387	.	+	.	gene_id "query"; transcript_id "query"; gene_name "query"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "Unknown";
+query	AddedGene	exon	439	732	.	+	.	gene_id "query"; transcript_id "query"; gene_name "query"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 2; exon_id "Unknown";

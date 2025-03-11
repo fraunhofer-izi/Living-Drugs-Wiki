@@ -1,0 +1,36 @@
+image: python:3.8-buster
+
+before_script:
+  - pip install mkdocs mkdocs-material
+  - export PATH=$PATH:$HOME/.local/bin
+
+stages:
+  - test
+  - deploy
+
+verify-checksums:
+  stage: test
+  script:
+    - sha256sum -c checksums.txt
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  
+test:
+  stage: test
+  script:
+    - mkdocs build --strict --verbose --site-dir test
+  artifacts:
+    paths:
+    - test
+  rules:
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+
+pages:
+  stage: deploy
+  script:
+    - mkdocs build --strict --verbose --site-dir public
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

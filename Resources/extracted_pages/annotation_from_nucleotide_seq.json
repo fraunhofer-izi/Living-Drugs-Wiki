@@ -1,0 +1,104 @@
+{
+  // Annotations from Oedemirli Paper
+    "5'LTR": ["TGGAAGGG", "AAAATCTCTAGCA"],
+    "HIV-Psi": ["CTCTCTCGA", "CGAGAGCGT"],
+    "PRE": ["AGGAGCTTTT", "AACAGCTCCT"],
+    "gp41 peptide": ["AAGAATGAA", "CAAGTTTG"],
+    "cPPT/CTS": ["TTTAAAAGAAAA", "AAAAATTCAAAATTT"],
+    "EF1a promoter": ["GCTCCGGTGC", "AGGTGTCGTGA"],
+    "CD8alpha signal peptide": ["ATGGCTCTGC", "CTGCTGCCCT"],
+    "BCMA VHH1": ["CAGGTCAAAC", "TGTCTAGC"],
+    "Linker": ["GGAGGAGGA", "GGATCT"],
+    "BCMA VHH2": ["GAGGTGCA", "CCGTGAGCAGC"],
+    "CD8alpha hinge": ["ACTAGTA", "CCTGTGAT"],
+    "CD8alpha transmembrane": ["ATCTACAT", "TTTACTGC"],
+    "TNFRSF9 cytoplasmatic": ["AAACGGGGC", "ATGTGAACTG"],
+    "CD247 cytoplasmatic": ["AGAGTGAAGT", "CCCCCTCGCTAA"],
+    "WPRE": ["AATCAAC", "TCCCCGC"],
+    "3'LTR": ["TGGAAGGGCTAA", "AAAATCTCTAGCA"],
+
+    // Annotations from ciltacel protein seq analyzed with SMART (translated proteins seq back to nucleotide with find_nucleotide_from_protein.py)
+    "Whitlow-linker": [
+      "AAGGGAAGCACGTCCGGCTCAGGGAAG",
+      "CCGGGCTCCGGCGAGGGAAGCACGAAGGGG"
+    ],
+    "Signal Protein": [
+      "ATGGCACTCCCCGTCACCGCCCTTCTCTTGCCCCTCGCCCTGCTGC",
+      "TGCATGCTGCCAGGCCCGACATTGTGCTCACT"
+    ],
+    "Igv1": [
+      "AGGGCCACCATCTCCTGTAGAGCCAGTGAGT",
+      "TTTTACACTGACCATAGATCCAGTGGAAGAAGACGATGTGGCCGTGTATTATTGTCTGCAG"
+    ],
+    "Igv2": [
+      "ACTGTTAAGATCAGTTGTAAAGCATCTGGCTATA",
+      "AGATACAGCCACTTACTTTTGCGCCCTC"
+    ],
+    "Transmembran": [
+      "ATTTATATTTGGGCCCCTTTGGCCGGAACATGTGGGGTGTTG",
+      "CTTCTCTCCCTTGTGATCACTCTGTAT"
+    ],
+    // Annotation from Tisacel paper US 9,499,629 B2
+    "RSV's U3":[
+      "ATGTAGTCTTATGC",
+      "ACATAAAC"
+    ],
+    "HIV R repeat":[
+      "GGGTCTCTCTGGTT",
+      "GTGCTTCA"
+    ],
+    "HIV U5 Repeat":[
+      "AGTAGTGTGT",
+      "AAAATCTCTAGCAGT"
+    ],
+    "Partial Gag/Pol":[
+      "CGAACAGGGAC",
+      "CGACGGTAT"
+    ],
+    "cPPT":[
+      "TAGACTGTAG",
+      "CCAGTTTGGCT"
+    ],
+    "EFA1 alpha promoter":[
+      "GCTCCGGTGC",
+      "TGTCGTGA"
+    ],
+    "CD19-BBzeta CAR":[
+      "ATGGCCTTAC",
+      "CCCCCTCGCT"
+    ],
+    "Hu Woodchuck PRE":[
+      "ATCAACCTCT",
+      "CTCCCCGCCTG"
+    ],
+    "R Repeat":[
+      "GGGTCTCTCT",
+      "AGTGCTTCA"
+    ],
+    "U5 Repeat":[
+      "AGTAGTGTGTGCCC",
+      "AAAATCTCTAGCAG"
+    ],
+    // linker seq für Hu19 anti-CD19 described in https://www.sciencedirect.com/science/article/pii/S1525001617303544?via%3Dihub#bib44
+    "Linker Seq ":[
+      "GGCAGCACCTCCGGCAGCGGCAAGCCTG",
+      "GCTCTGGCGAGGGCTCTACCAAGGGC"
+    ],
+    //Regions via domain prediction for protein seq using SMART (http://smart.embl-heidelberg.de/)
+    "Signal Peptide":[
+      "ATGGCCCTGCCTGTGACAGCTCTGCTGCTGCC",
+      "CCTGGCCCTGCTGCTGCATGCCGCCAGACCT"
+    ],
+    "IGV":[
+      "AGAGCCACCCTGAGCTGCAGAGCCAGCCAGAGCGTGTCCAGCAGCTACCTGGCCTGGTATCAGCAGAAGCCCGGACAGGCCCCCAGACTGCTGATCTACGGCGCCAGCTCTAGAGCCACCGGCATCCCCG",
+      "ACAGATTCAGCGGCAGCGGCAGTGGCACCGACTTCACCCTGACCATCAGCAGACTGGAACCCGAGGACTTCGCCGTGTACTACTGCCAGCAG"
+    ],
+    "IGV2":[
+      "AGCGTGAAGGTGTCCTGCAAGGACAGCGGCGGCACCTTCAGCAGCTACGCCATCAGCTGGGTGCGCCAGGCCCCAGGACAGGGGCTGGAATGGATGGGCGGCATCATCCCCATCTTCGGCACCACCAACTA",
+      "CGCCCAGCAGTTCCAGGGCAGAGTGACCATCACCGCCGACGAGAGCACCAGCACCGCCTACATGGAACTGAGCAGCCTGCGGAGCGAGGACACAGCCGTGTATTACTGTGCCCGC"
+    ],
+    "Transmembrane_domain":[
+      "TACATCTGGGCCCCTCTGGCCGGCACCTGTGGCGTGC",
+      "TGCTGCTGAGCCTGGTGATCACCCTGTACTGC"
+    ]
+  }

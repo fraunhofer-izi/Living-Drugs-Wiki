@@ -1,0 +1,6 @@
+tisacel	AddedGene	transcript	1	1459	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding";
+tisacel	AddedGene	exon	1	63	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8SP";
+tisacel	AddedGene	exon	64	789	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 2; exon_id "anti-CD19";
+tisacel	AddedGene	exon	790	892	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 3; exon_id "CD8HTMD";
+tisacel	AddedGene	exon	997	1122	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 4; exon_id "CD137SD";
+tisacel	AddedGene	exon	1123	1459	.	+	.	gene_id "tisacel"; transcript_id "tisacel"; gene_name "tisacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 5; exon_id "CD3zSD";
