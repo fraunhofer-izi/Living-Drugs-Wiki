@@ -4,7 +4,7 @@ This page summarizes information on FDA-approved and non-approved chimeric antig
 
 
 <figure class="half-size">
-  <img src="/car-flow/uploads/Abb_CAR_generations.png" alt="CAR Generations">
+  <img src="../../images/resources/Abb_CAR_generations.png" alt="CAR Generations">
   <figcaption>Image adapted from <a href="doi:10.3390/biomedicines10071493">Moreno, Carlos et al. Biomedicines (2022)</a></figcaption>
 </figure>
 
@@ -18,18 +18,16 @@ This page summarizes information on FDA-approved and non-approved chimeric antig
 
     Get nuceleotide sequences `.fasta` and annotation information `.gtf`
 
+    [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/CAR_constructs/Annotations)
 
-    [:dna: Nucleotide sequence](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/tree/main/Resources/CAR_constructs/Sequences)  
-
-    [:page_facing_up: Annotations](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/tree/main/Resources/CAR_constructs/Annotations)
-
+    [:page_facing_up: Annotations](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/CAR_constructs/Annotations)
 </div>
 
 
 ## FDA-Approved CAR-T Cell Therapies
 
 <figure>
-  <img src="/car-flow/uploads/Abb_FDA_approved.png" alt="FDA-approved">
+  <img src="../../images/resources/Abb_FDA_approved.png" alt="FDA-approved">
   <figcaption>Image adapted from <a href="doi:10.3390/biomedicines12081641">Grahnert et al. Biomedicines (2020)</a> *novel CD19 CAR (CAT = using a CAT131E10 hybridoma (CAT)) with a lower affinity than FMC63, which is used in the other approved anti-CD19 CARs</figcaption>
 </figure>
 

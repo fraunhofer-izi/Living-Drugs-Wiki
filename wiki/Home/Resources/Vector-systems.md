@@ -11,10 +11,9 @@ This page summarizes information about vector systems used to transduce the ther
 
     Get nuceleotide sequences `.fasta` and annotation information `.gtf`
 
+    [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/Vector_systems/Sequences)
 
-    [:dna: Nucleotide sequence](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/tree/main/Resources/Vector_systems/Sequences) 
-
-    [:page_facing_up: Annotations](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/tree/main/Resources/Vector_systems/Annotations)
+    [:page_facing_up: Annotations](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/Vector_systems/Annotations)
 
 </div>
 

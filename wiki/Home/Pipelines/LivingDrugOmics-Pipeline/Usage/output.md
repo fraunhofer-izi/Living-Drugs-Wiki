@@ -1,9 +1,10 @@
 # Output
-## Where to find output
-The directory of the output can be adjusted using the `outdir` parameter. If this parameter is not overridden using the [params-file](./params-file.md) or command line arguments, the output will be written to `${projectDir}/output`.
 
-## Structure of output
-After successful completion of the pipeline you should see the following directories in the output directory:
+## Where to Find Output
+The output directory can be set using the `outdir` parameter. If this parameter is not overridden using the [params-file](./params-file.md) or [command-line arguments](./cli.md), the output is written to `${projectDir}/output`.
+
+## Output Structure
+After the pipeline completes successfully, the output directory should contain the following subdirectories:
 
 - `gene_expression_reference`
 
@@ -21,37 +22,39 @@ After successful completion of the pipeline you should see the following directo
 
 - `pipeline_info`
 
-Each directory holds the pipeline output of the respective process. Processes that run per-sample are seperated into subdirectories named according to the sample name.
+Each directory contains the output from its respective process. Per-sample processes are organized into subdirectories named after each sample.
 
-## Logging 
-The `pipeline_info` directory holds Nextflow pipeline log data.
+## Logging
+The `pipeline_info` directory contains log data from the Nextflow pipeline itself.
 
-## Quality Control results
+## Quality Control Results
+
 ### FastQC
-The `fastqc` directory holds the per-sample output directories of the `FASTQC` proccesses containing a FastQC report for each sample.
+The `fastqc` directory contains the per-sample output directories from the `FASTQC` processes, containing a FastQC report for each sample.
 
 ### FastQ Screen
-The `fastq_screen` directory hold the per-sample output directories of the `FASTQ_SCREEN` processes verifying sequence runs contain the expected sequences by testing against genomes in `assets/fastq_databases`
+The `fastq_screen` directory contains the per-sample output directories from the `FASTQ_SCREEN` processes, including a report verifying whether sequencing runs contain expected sequences by testing against genomes in `assets/fastq_databases`.
 
 ### MultiQC
-The `multiqc` directory hlolds the output of the `MULTIQC` process including a summary of the FastQC and FastQ Screen results.
+The `multiqc` directory contains the output of the `MULTIQC` process, which provides a summary of FastQC and FastQ Screen results.
 
-## Analysis results
-### Gene Expression reference
-The `gene_expression_reference` directory holds the output of the `BUILD_GEX_REFERENCE` process that is run when you build a reference at runtime. Using the output of this process instead of regenerating the reference every time you run the pipeline is a great way to reduce runtime and computing power.
+## Analysis Results
+
+### Gene Expression Reference
+The `gene_expression_reference` directory contains the output of the `BUILD_GEX_REFERENCE` process, which is run when building a reference at runtime. Using this output instead of regenerating the reference for each pipeline run helps reduce runtime and computing power.
 
 ### CellRanger Multi
-The `cellranger_multi` directory holds the per-sample output directories of the `CELLRANGER_MULTI` process.
+The `cellranger_multi` directory contains per-sample output directories from the `CELLRANGER_MULTI` process.
 
 ### Quarto
 TODO
 
-### Seurat object
-The `seurat_object` directory holds the output of the `SEURAT_OBJECT` process - more specifically: the seurat object itself. A merged Seurat object (`seurat_merged.Rds`), which includes all samples and their respective data types generated using 10x Genomics libraries.
+### Seurat Object
+The `seurat_object` directory contains the output of the `SEURAT_OBJECT` process, specifically the Seurat object itself. A merged Seurat object (`seurat_merged.Rds`) is generated, which includes all samples and their respective data types from 10x Genomics libraries.
 
-Gene expression data is stored in an assay called "RNA," while Antibody Capture information is stored in an additional assay called "ADT."
+Gene expression data is stored in an assay called "RNA," while Antibody Capture data is stored in an additional assay called "ADT."
 
-Additional information is included as metadata, comprising quality scores, the abundance of mitochondrial and ribosomal genes, cell cycle scores, and doublet removal information.
+Additional metadata includes quality scores, mitochondrial and ribosomal gene abundance, cell cycle scores, and doublet removal information.
 
 Here is a complete list of all metadata information:
 

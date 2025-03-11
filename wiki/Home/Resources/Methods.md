@@ -3,11 +3,12 @@ hide:
   - navigation
   - toc
 ---
+
 # Sequence Retrieval and Annotation Process
 ## Sequences (fasta)
 All DNA sequences were extracted from various sources (see table below) using a Jupyter Notebook script (`translate_sequences.ipynb`). This process leverages a custom template matching approach implemented in the Python script `template_matching.py`. The method applies structural similarity (SSIM) to detect nucleotide templates (A, C, G, T) from .png images and accurately reconstruct them into a nucleotide sequence string. Annotation process is desribed below. 
 
-**Code**: [translate_sequences.ipynb](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/translate_sequences.ipynb?ref_type=heads)
+**Code**: [translate_sequences.ipynb](https://github.com/fraunhofer-izi/TODO/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/translate_sequences.ipynb?ref_type=heads)
 
 ---
 
@@ -30,13 +31,13 @@ For annotation, known nucleotide sequences of CAR construct parts were retrieved
 - Accession numbers: `"NM_001378516.1", "NM_171827.4", "NM_001561.6", "NM_001410981.1", "NR_027760.3"`
 
 **Fetched Sequences**:  
-[`fetched_sequences.fasta`](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/fetched_sequences.fasta?ref_type=heads)
+[`fetched_sequences.fasta`](https://github.com/fraunhofer-izi/TODO/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/fetched_sequences.fasta?ref_type=heads)
 
 ### 2. Comparison with known annotations
 Each CAR construct was aligned against the retrieved domain sequences using BLAST. When applicable, annotations were compared with the original source data (`annotation_from_nucleotide_seq.json`) and compiled into a `.gtf` file.
 
-- **Full Annotation Script**: [`get_annotations.py`](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/blob/1b1148904205e7c43620f96ab9d8ebc27f621b18/Resources/extracted_pages/get_annotations.py)
-- **Annotation File**: [`annotation_from_nucleotide_seq.json`](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/annotation_from_nucleotide_seq.json?ref_type=heads)
+- **Full Annotation Script**: [`get_annotations.py`](https://github.com/fraunhofer-izi/TODO/-/blob/1b1148904205e7c43620f96ab9d8ebc27f621b18/Resources/extracted_pages/get_annotations.py)
+- **Annotation File**: [`annotation_from_nucleotide_seq.json`](https://github.com/fraunhofer-izi/TODO/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/annotation_from_nucleotide_seq.json?ref_type=heads)
 
 ### 3. Comparison with DNA domain prediction
-All CAR sequences were additionally translated into protein sequence, and screened for protein domains with [SMART](http://smart.embl-heidelberg.de/smart). Based on protein position of predicted domains, nucleotide sequences were extracted [`find_nucleotide_from_protein.py`](https://ribogit.izi.fraunhofer.de/david.schmidt/car-flow/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/find_nucleotide_from_protein.py?ref_type=heads).
+All CAR sequences were additionally translated into protein sequence, and screened for protein domains with [SMART](http://smart.embl-heidelberg.de/smart). Based on protein position of predicted domains, nucleotide sequences were extracted [`find_nucleotide_from_protein.py`](https://github.com/fraunhofer-izi/TODO/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/find_nucleotide_from_protein.py?ref_type=heads).

@@ -24,7 +24,7 @@ As CAR T-cell therapies continue to expand, careful monitoring and tailored comp
     - _Output:_
         - Seurat object with integrated single-cell multi-omic RNA-seq data for downstream analysis
 
-    [:arrow_right: LivingDrugOmics](../Pipelines/LivingDrugOmics-Pipeline/index.md)
+    [:arrow_right: LivingDrugOmics](./LivingDrugOmics-Pipeline/index.md)
 
 -   __:computer: LivingDrugSpace (in-progress)__
 
@@ -38,7 +38,7 @@ As CAR T-cell therapies continue to expand, careful monitoring and tailored comp
 
     ---
 
-    ![Integration Site](../../images/ISA.png)
+    ![Integration Site](../../images/pipelines/ISA.png)
     
     [:arrow_right: Coming Soon]()
 

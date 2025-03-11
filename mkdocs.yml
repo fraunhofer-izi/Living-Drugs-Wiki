@@ -1,6 +1,6 @@
 site_name: Multi-Modal Molecular Analyses for Living Drugs
 use_directory_urls: true
-docs_dir: wiki/docs
+docs_dir: wiki
 
 markdown_extensions:
   - attr_list
@@ -26,14 +26,11 @@ nav:
       - LivingDrugOmics:
           - Home/Pipelines/LivingDrugOmics-Pipeline/index.md
           - Specific Usage:
-              - Params File: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/01_Userinput-The-Params-File.md
-              - Command Line Arguments: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/02_Command-Line-Arguments.md
-              - Output: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/03_Output.md
+              - Params File: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/params-file.md
+              - Command Line Arguments: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/cli.md
+              - Output: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/output.md
           - Documentation:
-              - The main script: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/main.md
-              - Handling references: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/handle_references.md
-              - Secondary analysis: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/secondary_analysis.md
-              - Quality control: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/quality_control.md
+              - Reference building: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/reference_building.md
   - Resources:
       - Home/Resources/index.md
       - CAR Constructs: Home/Resources/CAR-constructs.md
