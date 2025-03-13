@@ -38,7 +38,7 @@ The processes `MULTIQC` and `FASTQ_SCREEN` need configuration files to run prope
 
 - `--fastq_screen_config <path>`
 
-**Important**: Working with FastQ-Screen databases within Nextflow can be tricky because you cannot access files outside of the project directory without staging them first. Because of this you have to move the databases into the `assets/fastqs_databases` directory and reference them relative to the project directory with the `${projectDir}` variable which is substituted at runtime (Using other variables will not work). See the default config `assets/config/fastqs_config.conf` for an example.
+**Important**: Working with FastQ-Screen databases within Nextflow can be tricky because you cannot access files outside of the working directory without staging them first. Because of this you have to move the databases into a directory within the working directory (using symlinks works as well) and use the `--fastq_screen_database_dir <path>` parameter to reference this database directory. When using your own FastQ Screen config use `{FQS_DIR}` as a substitute for your database directory. This variable is replaced at runtime. See the default config `assets/config/fastqs_config.conf` for an example. We are looking to improve this process in the future. If you still run into problems and don't rely on the FastQ Screen results you can skip the process with the `--skip_fastq_screen` flag.
 
 ### Experimental features
 
