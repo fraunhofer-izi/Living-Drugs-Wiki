@@ -1,11 +1,16 @@
 # CAR Constructs
 
-This page summarizes information on FDA-approved and non-approved chimeric antigen receptors (CAR) constructs. This serves as a comprehensive resource for researchers and bioinformaticians working with CAR T-cell profiling. CAR constructs are divided into different generations referring to the different stages of development, with each generation introducing improvements to enhance efficacy, persistence, and safety. Below, both FDA-approved and non-approved CAR products are presented with detailed descriptions of their structural differences. Precise knowledge of CAR sequences is essential for performing in-depth sequence analyses, including accurate identification of CAR expression, detection of potential mutations, assessment of binding affinities, and evaluation of immunogenicity, all critical for optimizing CAR design and functionality.
+This page summarizes information on FDA-approved and non-approved chimeric antigen receptors (CAR) constructs. This serves as a comprehensive resource for researchers and bioinformaticians working with CAR T-cell profiling. 
+
+
+CAR constructs are categorized into different generations, each representing a stage of development. With each generation, specific enhancements are introduced—such as the addition of co-stimulatory domains (e.g., CD28, 4-1BB), improvements in antigen-binding affinity, signaling strength, or persistence, and the incorporation of safety switches or logic gating. These modifications are designed to increase therapeutic efficacy, prolong cell survival, and reduce toxicity or off-target effects.
+
+Below, both FDA-approved and non-approved CAR products are presented with detailed descriptions of their structural differences regarding the CAR construct. Precise knowledge of CAR sequences is essential for performing in-depth sequence analyses, including accurate identification of CAR expression, detection of potential mutations, assessment of binding affinities, and evaluation of immunogenicity, all critical for optimizing CAR design and functionality.
 
 
 <figure class="half-size">
-  <img src="../../images/resources/Abb_CAR_generations.png" alt="CAR Generations">
-  <figcaption>Image adapted from <a href="doi:10.3390/biomedicines10071493">Moreno, Carlos et al. Biomedicines (2022)</a></figcaption>
+  <img src="../../../images/resources/Abb_CAR_generations.png" alt="CAR generations">
+  <figcaption>Image adapted from <a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2022.1034707/full"> Tomasik et. al 2022 </a></figcaption>
 </figure>
 
 ## Link to Resources
@@ -27,8 +32,8 @@ This page summarizes information on FDA-approved and non-approved chimeric antig
 ## FDA-Approved CAR-T Cell Therapies
 
 <figure>
-  <img src="../../images/resources/Abb_FDA_approved.png" alt="FDA-approved">
-  <figcaption>Image adapted from <a href="doi:10.3390/biomedicines12081641">Grahnert et al. Biomedicines (2020)</a> *novel CD19 CAR (CAT = using a CAT131E10 hybridoma (CAT)) with a lower affinity than FMC63, which is used in the other approved anti-CD19 CARs</figcaption>
+  <img src="../../../images/resources/Abb_FDA_approved.png" alt="FDA-approved">
+  <figcaption>Image adapted from <a href="doi:10.3390/biomedicines12081641">Grahnert et al. Biomedicines (2020)</a> *novel CD19 CAR (CAT = using a CAT131E10 hybridoma (CAT))</figcaption>
 </figure>
 
 
@@ -108,7 +113,11 @@ This page summarizes information on FDA-approved and non-approved chimeric antig
 - **Indication:** Relapsed or refractory (R/R) B-cell precursor acute lymphoblastic leukemia (ALL)
 - **Approval Date:** November 8, 2024 [Link](https://www.cgtlive.com/view/fda-approves-obe-cel-adults-relapsed-refractory-b-cell-precursor-acute-lymphoblastic-leukemia)
 - **Antigen Target:** CD19
-- **CAR Construct Structure:** To be updated.
+- **CAR Construct Structure:** 
+    - anti-CD19 (novel CD19 CAR (CAT = using a CAT131E10 hybridoma (CAT)) with a lower affinity than FMC63)
+    - CD8a (hinge and TMD)
+    - CD137/4-1BB
+    - CD3ζ
 
 ## Non-FDA Approved CAR-T and Related Therapies
 

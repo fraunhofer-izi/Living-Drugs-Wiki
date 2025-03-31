@@ -6,7 +6,7 @@ hide:
 
 # Sequence Retrieval and Annotation Process
 ## Sequences (fasta)
-All DNA sequences were extracted from various sources (see table below) using a Jupyter Notebook script (`translate_sequences.ipynb`). This process leverages a custom template matching approach implemented in the Python script `template_matching.py`. The method applies structural similarity (SSIM) to detect nucleotide templates (A, C, G, T) from .png images and accurately reconstruct them into a nucleotide sequence string. Annotation process is desribed below. 
+Sequence information of CAR T cell products (CAR constructs and vectors systems) has been collected from literature and patents (see sources in table below). All DNA sequences were extracted from those sources using a Jupyter Notebook script (`translate_sequences.ipynb`). This process leverages a custom template matching approach implemented in the Python script `template_matching.py`. The method applies structural similarity (SSIM) to detect nucleotide templates (A, C, G, T) from .png images and accurately reconstruct them into a nucleotide sequence string. Annotation process is desribed below. To ensure correct sequences, CAR constructs were manually re-check subsequently.
 
 **Code**: [translate_sequences.ipynb](https://github.com/fraunhofer-izi/TODO/-/blob/add-scripts-to-pipeline/Resources/extracted_pages/translate_sequences.ipynb?ref_type=heads)
 
@@ -14,13 +14,14 @@ All DNA sequences were extracted from various sources (see table below) using a 
 
 ### 📌 Sources of Sequences
 
-| **CAR Construct** | **Source** | **CAR Sequence** | **Vector Sequence** |
+| **CAR T Cell Product** | **Original Source** | **CAR Sequence** | **Vector Sequence** |
 |------------------|-----------|------------------|----------------|
-| **Ciltacel** | Patent *WO2022116086A1* | SeqID No. 9–17 | NA |
-| **Oezdemirli (Ciltacel)** | Supplementary Figure S1 from: [Ozdemirli M et al](https://doi.org/10.1056/NEJMoa2401530) | Nucleotide sequence of the CAR construct (highlighted in light blue) |  From 5'UTR to 3'UTR |
-| **Idecel** | Patent *WO2021091978A1* | Sequence No. 10 | Sequence No. 36 |
-| **Tisacel** | Patent *US 9,499,629 B2* | SeqID No. 8 | SeqID No. 1 |
-| **Axicel** | DrugBank via "Axicel" search referenced: [Roberts ZJ et al.](https://doi.org/10.1080/10428194.2017.1387905) :arrow_right: Roberts et al. referenced: [Kochenderfer JN et al.](https://doi.org/10.1097/CJI.0b013e3181ac6138) :arrow_right: Kochenderfer JN et al. referenced *HM852952*  | Genbank Identifier *HM852952*  | NA |
+| **Ciltacabtagen autoleucel (Ciltacel)** | Patent *WO2022116086A1* | SeqID No. 9–16 from source | _not available_ |
+| **Ciltacabtagen autoleucel (Ciltacel)** | Patent *US20230270786A1* | SeqID No. 9–16 from source | _not available_ |
+| **Oezdemirli (Ciltacel)** | Supplementary Figure S1 from: [Ozdemirli M et al](https://doi.org/10.1056/NEJMoa2401530) | Nucleotide sequence of the CAR construct (highlighted in light blue) | Nucleotide sequence from 5'UTR to 3'UTR part|
+| **Idecabtagene vicleucel (Idecel)** | Patent *WO2021091978A1* | Sequence No. 10 from source | Sequence No. 36 from source |
+| **Tisagenlecleucel (Tisacel)** | Patent *US 9,499,629 B2* | SeqID No. 8 from source | SeqID No. 1 from source |
+| **Axicabtagene ciloleucel (Axicel)** | DrugBank search via "Axicel" referenced: [Roberts ZJ et al.](https://doi.org/10.1080/10428194.2017.1387905) :arrow_right: Roberts et al. referenced: [Kochenderfer JN et al.](https://doi.org/10.1097/CJI.0b013e3181ac6138) :arrow_right: Kochenderfer JN et al. referenced *HM852952*  | Genbank Identifier *HM852952*  | NA |
 
 ## Annotations (gtf)
 ### 1. Download known protein sequences

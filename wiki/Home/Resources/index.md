@@ -1,5 +1,10 @@
 # Resource on CAR T-Cell Therapies
-This repository serves as a resource and is designed to support the analysis and development of CAR T-cell therapies by providing comprehensive sequence and annotation data. Given the significant differences in CAR constructs, it is essential to have a tailored approach to the detection of CAR+ cells e.g. with single-cell sequencing. Furthermore, the choice of vector used for transfection affects the efficiency, safety and stability of gene transfer. Therefore, we also include known sequences and annotations of vector systems that can be used in integration site analysis to assess integration patterns in the host genome.
+
+This repository serves as a **resource** to support the analysis and development of CAR T cell therapies by providing comprehensive sequence and annotation data. For original sources and annotation process see [Methods and Scripts](https://david.schmidt.ribogitpages.izi.fraunhofer.de/living-drugs-wiki/Home/Resources/Methods/).
+
+**CAR constructs** — engineered gene sequences encoding the chimeric antigen receptor — can vary significantly between therapies. These differences require tailored approaches for accurate detection of CAR-positive cells, for example, through single-cell sequencing. :arrow_right: **For a more in-depth explanation about the different CAR constructs see:** [CAR constructs](./CAR-constructs.md)
+
+In addition, **vector systems** — delivery tools such as viral vectors used to introduce CAR constructs into T cells — play a critical role in determining the efficiency, safety, and stability of gene transfer. Used vector systems themselves differ in key features, such as the type of promoter used, regulatory elements, and backbone sequences, all of which can impact CAR expression and genomic integration. :arrow_right: **For a more in-depth explanation about the vector systems, see:**[Vector systems](./Vector-systems.md)
 
 <figure class="half-size">
   <img src="../../images/resources/Abb_Vecor_Construct.png" alt="Vector and CAR construct">
@@ -8,8 +13,8 @@ This repository serves as a resource and is designed to support the analysis and
 
 ## Key Features
 
-- **CAR constructs**: Includes detailed sequence and annotation data for the latest CAR T cell therapies. These data is crucial for researchers to understand the specific characteristics and behaviors of different CAR constructs. For a more in-depth explanation about the different CAR constructs see: [CAR constructs](./CAR-constructs.md)
-- **Vector Systems**: Provides whole vector information necessary for performing integration site analysis. This helps in understanding how CAR constructs integrate within the genome, which is important for evaluating the safety and efficacy of the therapy. For a more in-depth explanation about the vector systems, see: [Vector systems](./Vector-systems.md)
+- **CAR constructs**: Includes detailed nucleotide sequence and annotation data of CAR construct from the latest (public available) CAR T cell therapies. These data is crucial for researchers to understand the specific characteristics and behaviors of different CAR constructs.
+- **Vector Systems**: Provides complete vector sequences and annotations, which are critical for applications such as integration site analysis. These data help researchers evaluate how CAR constructs integrate into the genome—an important factor for assessing the safety and efficacy of CAR T cell therapies. 
 - **Continuous Updates**: This repository is designed to be continuously updated with new data and resources as they become available, ensuring that users have access to the most current information in the field of CAR T-cell therapy.
 
 ## Resources
@@ -20,18 +25,18 @@ This repository serves as a resource and is designed to support the analysis and
 
     ---
 
-    Get nuceleotide sequences `.fasta` and annotation information `.gtf`
+    Get nucleotide sequences `.fasta` and annotation information `.gtf`
 
 
-    [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/CAR_constructs/Sequences)  
+    [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/CAR_constructs/Sequences)
 
     [:page_facing_up: Annotations](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/CAR_constructs/Annotations)
 
--   __CAR vectors__
+-   __Vectors systems__
 
     ---
 
-    Get nuceleotide sequences `.fasta` and annotation information `.gtf`
+    Get nucleotide sequences `.fasta` and annotation information `.gtf`
 
 
     [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/Vector_systems/Sequences) 
@@ -42,7 +47,7 @@ This repository serves as a resource and is designed to support the analysis and
 
     ---
 
-    View Methods & Scripts on how sequence and annotation information was retrieved
+    View Methods & Scripts on how and where sequence and annotation information was retrieved.
 
     [:material-script-text: Methods and Scripts](./Methods.md)
 
