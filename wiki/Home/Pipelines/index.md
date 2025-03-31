@@ -28,7 +28,7 @@ As CAR T cell therapies continue to expand, **careful monitoring and tailored co
 
     [:arrow_right: LivingDrugOmics](./LivingDrugOmics-Pipeline/index.md)
 
--   __:computer: LivingDrugSpace (in-progress)__
+-   __:computer: LivingDrugSpace (in progress)__
 
     ---
 
@@ -36,7 +36,7 @@ As CAR T cell therapies continue to expand, **careful monitoring and tailored co
 
     [:arrow_right: Coming Soon]()
 
--   __:computer: Integration Site Analysis (in-progress)__
+-   __:computer: Integration Site Analysis (in progress)__
 
     ---
 
