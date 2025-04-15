@@ -4,33 +4,29 @@ Cellular immunotherapy harnesses the power of living cells — such as genetical
 
 A unique aspect of adoptive cellular immunotherapies, such as CAR T cell therapies, is that they are **"living drugs"**, meaning that they are themselves biological systems that continue to evolve and respond in the patient's body. Given the complexity of these therapies, tailored computational biology is essential to study such heterogeneous systems. Therefore, we apply advanced multi-modal single-cell **technologies** and develop computational **pipelines**, in order to study adoptive cellular immunotherapies. While all currently approved adoptive cellular immunotherapies are based on CAR T cells, each specific therapy has distinct characteristics. To support their study and development, we aim to provide a comprehensive **resource** detailing the genetic designs of CAR constructs and the vector systems used for the transfection of these CAR T cell products.
 
+Visit our [website](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/)
+
 ## Explore the Sections
 
 <div class="grid cards" markdown>
 
 -   __:microscope: Technologies__
 
-    ---
-
     Explore the technologies we use to study living drugs — including single-cell multi-omics and integration site analysis.
 
-    [:arrow_right: Explore Technologies](Home/Technologies/index.md)
+    [:arrow_right: Explore Technologies](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Technologies/)
 
 -   __:computer: Pipelines__
 
-    ---
-
     Access our computational best practices and analytical pipelines designed to study adoptive cellular immunotherapies. 
 
-    [:arrow_right: Explore Pipelines](Home/Pipelines/index.md)
+    [:arrow_right: Explore Pipelines](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Pipelines/)
 
 -   __:material-database: Resources__
 
-    ---
-
     Find detailed explanation of the differences between CAR T therapies and resource on CAR constructs and the vector systems employed in their production.
     
-    [:arrow_right: Explore Resources](Home/Resources/index.md)
+    [:arrow_right: Explore Resources](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Resources/)
 
 </div>
 
