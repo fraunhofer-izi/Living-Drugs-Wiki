@@ -18,9 +18,7 @@ A unique aspect of adoptive cellular immunotherapies, such as CAR T cell therapi
 
 -   __:computer: Pipelines__
 
-    Access our computational best practices and analytical pipelines designed to study adoptive cellular immunotherapies. 
-
-    [:arrow_right: Explore Pipelines](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Pipelines/)
+    Access our computational best practices and analytical pipelines designed to study adoptive cellular immunotherapies. [:arrow_right: Explore Pipelines](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Pipelines/)
 
 -   __:floppy_disk: Resources__
 
