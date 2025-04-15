@@ -12,9 +12,7 @@ A unique aspect of adoptive cellular immunotherapies, such as CAR T cell therapi
 
 -   __:microscope: Technologies__
 
-    Explore the technologies we use to study living drugs — including single-cell multi-omics and integration site analysis.
-
-    [:arrow_right: Explore Technologies](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Technologies/)
+    Explore the technologies we use to study living drugs — including single-cell multi-omics and integration site analysis. [:arrow_right: Explore Technologies](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Technologies/)
 
 -   __:computer: Pipelines__
 
@@ -22,9 +20,7 @@ A unique aspect of adoptive cellular immunotherapies, such as CAR T cell therapi
 
 -   __:floppy_disk: Resources__
 
-    Find detailed explanation of the differences between CAR T therapies and resource on CAR constructs and the vector systems employed in their production.
-    
-    [:arrow_right: Explore Resources](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Resources/)
+    Find detailed explanation of the differences between CAR T therapies and resource on CAR constructs and the vector systems employed in their production. [:arrow_right: Explore Resources](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Resources/)
 
 </div>
 
