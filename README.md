@@ -22,7 +22,7 @@ A unique aspect of adoptive cellular immunotherapies, such as CAR T cell therapi
 
     [:arrow_right: Explore Pipelines](https://david.schmidt.ribogitpages.izi.fraunhofer.de/car-flow/Home/Pipelines/)
 
--   __:material-database: Resources__
+-   __:database: Resources__
 
     Find detailed explanation of the differences between CAR T therapies and resource on CAR constructs and the vector systems employed in their production.
     
