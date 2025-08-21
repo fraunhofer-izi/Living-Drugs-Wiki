@@ -15,7 +15,6 @@ def match_templates(image_path, templates, template_strings, scales, threshold, 
 
         for scale in scales:
             scaled_template = cv2.resize(template, None, fx=scale, fy=scale)
-
             h, w = scaled_template.shape[:2]
 
             match = cv2.matchTemplate(image, scaled_template, cv2.TM_CCOEFF_NORMED)

@@ -13,13 +13,13 @@ The most commonly used vectors include lentiviral and gamma-retroviral vectors, 
 
     Get nuceleotide sequences `.fasta` and annotation information `.gtf`
 
-    [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/Vector_systems/Sequences)
+    [:dna: Nucleotide sequence](https://github.com/fraunhofer-izi/Living-Drugs-Wiki/tree/main/Resources/Vector_systems/Sequences)
 
-    [:page_facing_up: Annotations](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources/Vector_systems/Annotations)
+    [:page_facing_up: Annotations](https://github.com/fraunhofer-izi/Living-Drugs-Wiki/tree/main/Resources/Vector_systems/Annotations)
 
 </div>
 
-## Vector Systems for FDA-Approved CAR-T Therapies
+## Vector Systems for FDA-Approved CAR T Therapies
 ### 1. Tisagenlecleucel (Kymriah)
 
 - **Vector System:** Lentiviral Vector, 3rd generation
