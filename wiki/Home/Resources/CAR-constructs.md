@@ -45,7 +45,7 @@ Below, both FDA-approved and non-approved CAR products are presented with detail
 | [Ciltacabtagene Autoleucel (Carvykti)](https://www.drugs.com/pro/carvykti.html) | 2022-02-28 | BCMA | Multiple Myeloma | BCMA scFv (VHH1-G4S-VHH2) | CD8a hinge | CD8a transmembrane domain | 4-1BB, CD3ζ | https://www.drugs.com/pro/carvykti.html |
 | [Tisagenlecleucel (Kymriah)](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/kymriah-tisagenlecleucel) | 2017-08-30 | CD19 | Acute Lymphocytic Leukemia | FMC63 (anti-CD19) | CD8 hinge | CD8 TMD | 4-1BB, CD3ζ | https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/kymriah-tisagenlecleucel |
 | [Axicabtagene Ciloleucel (Yescarta)](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/yescarta-axicabtagene-ciloleucel) | 2017-10-18 | CD19 | B-cell Lymphoma | FMC63 (anti-CD19) | CD28 extracellular | CD28 TMD | CD28 intracellular, CD3ζ | https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/yescarta-axicabtagene-ciloleucel |
-| [Brexucabtagene Autoleucel (Tecartus)](https://www.drugs.com/pro/tecartus.html) | 2020-07-24 | CD19 | MCL / ALL | FMC63 (anti-CD19) | CD28 extracellular | CD28 TMD | CD28 intracellular, CD3ζ | https://www.drugs.com/pro/tecartus.html |
+| [Brexucabtagene Autoleucel (Tecartus)](https://www.drugs.com/pro/tecartus.html) | 2020-07-24 | CD19 | MCL / ALL | FMC63 (anti-CD19) | CD28 extracellular | CD28 TMD | CD28 intracellular, CD3ζ | https://www.drugs.com/pro/tecartus.html, same design as Axi-Cel https://www.scienceboard.net/index.aspx?sec=ser&sub=def&pag=dis&ItemID=3389|
 | [Lisocabtagene Maraleucel (Breyanzi)](https://www.drugs.com/pro/breyanzi.html) | 2021-02-05 | CD19 | B-cell Lymphoma | FMC63 (anti-CD19) | IgG4 hinge | CD28 TMD | 4-1BB, CD3ζ | https://www.drugs.com/pro/breyanzi.html |
 | [Obecabtagene Autoleucel (Obe-cel / Aucatzyl)](https://www.cgtlive.com/view/fda-approves-obe-cel-adults-relapsed-refractory-b-cell-precursor-acute-lymphoblastic-leukemia) | 2024-11-08 | CD19 | R/R B-cell precursor ALL | CAT131E10 (anti-CD19, low affinity) | CD8a hinge | CD8a TMD | 4-1BB, CD3ζ | https://www.cgtlive.com/view/fda-approves-obe-cel-adults-relapsed-refractory-b-cell-precursor-acute-lymphoblastic-leukemia |
 
@@ -105,9 +105,7 @@ Below, both FDA-approved and non-approved CAR products are presented with detail
 - **Approval Date:** July 24, 2020 (MCL), October 1, 2021 (ALL)
 - **Antigen Target:** CD19
 - **CAR Construct Structure:**
-    - anti-CD19 (FMC63)
-    - CD28 (part of extracellular, TMD, and intracellular part)
-    - CD3ζ
+    - same design as Axicabtagene Ciloleucel (https://www.scienceboard.net/index.aspx?sec=ser&sub=def&pag=dis&ItemID=3389) but different manufracturing process. 
 
 ### 6. [**Lisocabtagene Maraleucel (Breyanzi)**](https://www.drugs.com/pro/breyanzi.html)  
 
