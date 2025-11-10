@@ -9,9 +9,11 @@ The references are provided through a series of different parameters. If you are
 Gene Expression:
 
 !!! info
-    To understand how the parameters are defined and used, take a look at the decision-making process: [reference_building](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg)
+    **For guidance take a look at the [decision-tree](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg)**
 
 - `gene_expression_reference: <path>` - A prebuilt 10xGenomics compatible gene expression reference.
+
+OR:
 
 - `gene_expression_reference_version: <'2020'/'2024'>` - Version of the reference building script to use - default: `'2024'`
 
@@ -19,9 +21,9 @@ Gene Expression:
 
 - `gene_expression_source_gtf: <path>` - Annotation to build the custom gene expression reference with at runtime.
 
-- `gene_expression_car_fa: <path>` - CAR genome to add to gene expression reference at runtime.
+- `gene_expression_car_fa: <path>` - CAR genome to add to gene expression reference at runtime. :arrow_right: Custom reference
 
-- `gene_expression_car_gtf: <path>` - CAR annotation to add to gene expression reference at runtime.
+- `gene_expression_car_gtf: <path>` - CAR annotation to add to gene expression reference at runtime. :arrow_right: Custom reference
 
 VDJ:
 
@@ -41,7 +43,7 @@ feature_reference: '/path/to/feature/reference'
 
 Note that only the references that will actually be used are necessary. For instance, if no VDJ-T library is used, there is no need to provide a VDJ reference.
 
-Regarding the `gene_expression_*` parameters, it is important to understand that the behavior of the pipeline changes depending on the parameters provided. This is because the pipeline can build a gene expression reference at runtime if the appropriate files are provided (at least `gene_expression_source_fa` and `gene_expression_source_gtf`). The `gene_expression_car_fa` and `gene_expression_car_gtf` parameters also come into play when building a **custom reference (e.g. for detection of CAR mapping reads)**, as they are concatenated with their source counterparts if set. However, they are not simply ignored when `gene_expression_reference` is set. This is useful if you have a prebuilt custom reference with a concatenated CAR construct because in order for the pipeline to build metrics around the CAR construct it needs the unconcatenated construct. To do this just provide both `gene_expression_reference` as well as `gene_expression_car_fa` and `gene_expression_car_gtf`. For more details on how the reference-building process works, see the [reference building explanation](./reference_building.md).
+Regarding the `gene_expression_*` parameters, it is important to understand that the behavior of the pipeline changes depending on the parameters provided. This is because the pipeline can build a gene expression reference at runtime if the appropriate files are provided (at least `gene_expression_source_fa` and `gene_expression_source_gtf`). The `gene_expression_car_fa` and `gene_expression_car_gtf` parameters also come into play when building a **custom reference (e.g. for detection of CAR mapping reads)**, as they are concatenated with their source counterparts if set. However, they are not simply ignored when `gene_expression_reference` is set. This is useful if you have a prebuilt custom reference with a concatenated CAR construct because in order for the pipeline to build metrics around the CAR construct it needs the unconcatenated construct. To do this just provide both `gene_expression_reference` as well as `gene_expression_car_fa` and `gene_expression_car_gtf`. For more details on how the reference-building process works, see the [reference building explanation](./reference_building.md) and the [decision tree](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg).
 
 ## Samples
 
