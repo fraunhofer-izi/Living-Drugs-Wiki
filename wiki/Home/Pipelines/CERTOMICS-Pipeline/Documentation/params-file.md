@@ -8,6 +8,9 @@ The references are provided through a series of different parameters. If you are
 
 Gene Expression:
 
+!!! info
+    To understand how the parameters are defined and used, take a look at the decision-making process: [reference_building](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg)
+
 - `gene_expression_reference: <path>` - A prebuilt 10xGenomics compatible gene expression reference.
 
 - `gene_expression_reference_version: <'2020'/'2024'>` - Version of the reference building script to use - default: `'2024'`
