@@ -1,0 +1,891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>CERTOMICS - Multi-Modal Molecular Analyses for Living Drugs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#certomics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Multi-Modal Molecular Analyses for Living Drugs" class="md-header__button md-logo" aria-label="Multi-Modal Molecular Analyses for Living Drugs" data-md-component="logo">
+      
+  <img src="../../../images/Logo_light.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Multi-Modal Molecular Analyses for Living Drugs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CERTOMICS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Technologies/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Technologies
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Pipelines
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Resources/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Multi-Modal Molecular Analyses for Living Drugs" class="md-nav__button md-logo" aria-label="Multi-Modal Molecular Analyses for Living Drugs" data-md-component="logo">
+      
+  <img src="../../../images/Logo_light.png" alt="logo">
+
+    </a>
+    Multi-Modal Molecular Analyses for Living Drugs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Technologies/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Technologies
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Technologies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pipelines
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pipelines
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../LivingDrugOmics-Pipeline/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    LivingDrugOmics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            LivingDrugOmics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LivingDrugOmics-Pipeline/Documentation/params-file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Params File
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LivingDrugOmics-Pipeline/Documentation/reference_building/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reference building
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LivingDrugOmics-Pipeline/Documentation/cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Command Line Arguments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LivingDrugOmics-Pipeline/Documentation/output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Output
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Resources/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Resources/CAR-constructs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CAR Constructs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Resources/Vector-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vector Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="certomics">CERTOMICS<a class="headerlink" href="#certomics" title="Permanent link">&para;</a></h1>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /> Getting started</strong></p>
+<hr />
+<p>If you're only interested in how to use the pipeline and its inputs, head over to the quickstart guide. </p>
+<p><a href="#quickstart-guide"><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/27a1.svg" title=":arrow_right:" /> Get started quickly</a></p>
+</li>
+<li>
+<p><strong><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4d6.svg" title=":book:" /> What is CERTOMICS</strong></p>
+<hr />
+<p>Want to understand what CERTOMICS is and how it works?</p>
+<p><a href="#what-is-certomics"><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/27a1.svg" title=":arrow_right:" /> What is CERTOMICS</a>
+<a href="#documentation"><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/27a1.svg" title=":arrow_right:" /> Documentation</a></p>
+</li>
+</ul>
+</div>
+<h1 id="what-is-certomics">What is CERTOMICS<a class="headerlink" href="#what-is-certomics" title="Permanent link">&para;</a></h1>
+<p>This Nextflow-based pipeline offers enhanced <strong>cert</strong>ainty in immunophenotyping and data interpretation, tailored for single-cell multi<strong>omics</strong> profiling of adoptive cellular immunotherapies. <em>CERTOMICS</em> enables comprehensive immune profiling by supporting single-cell 10x Genomics technologies, such as gene expression (GEX) sequencing, cell surface protein detection, and V(D)J (TCR and BCR) sequencing. To reliably characterize CAR-positive cells, the pipeline enables CAR detection based on a custom reference and incorporates specialized quality control metrics to ensure robust identification of CAR-positive cells. </p>
+<p><img alt="Abb_CAR_T_cell_profiling_V2.png" class="half-size" src="../../../images/pipelines/CERTOMICS/Abb_CAR_T_cell_profiling_V2.png" /></p>
+<h2 id="pipeline-overview">Pipeline Overview<a class="headerlink" href="#pipeline-overview" title="Permanent link">&para;</a></h2>
+<p>The pipeline is structured into three main processes: handling 10x data and libraries, performing core secondary analysis, and running quality control. The key feature of the pipeline is its ability to detect CAR-positive cells by incorporating a dedicated reference processing step. For this step, the user simply provide a CAR sequence file <code>.fasta</code> and CAR annotation file <code>.gtf</code>, for which CAR+ cells should be detected. For detailed explanation see: <a href="https://fraunhofer-izi.github.io/Living-Drugs-Wiki/Home/Pipelines/CERTOMICS-Pipeline/Documentation/reference_building/">References</a>. Common CAR sequences and annotation information can be found in our <a href="https://fraunhofer-izi.github.io/Living-Drugs-Wiki/Home/Resources/">Resource</a>.</p>
+<ul>
+<li><code>Workflow: HANDLE_REFERENCES</code> - Generates custom reference files for  CellRanger based on the sequencing libraries (GEX, VDJ,
+ADT) and the CAR construct (FASTA, GTF) given.</li>
+<li><code>Workflow: RUN_SECONDARY_ANALYSIS</code> - Executes CellRanger multi and generates a merged, annotated Seurat object, and computes CAR-specific quality control metrics, with
+results summarized in a dedicated webpage.</li>
+<li><code>Workflow: RUN_QUALITY_CONTROL</code> - Conducts quality control assessments
+using FASTQC (v0.12.1) FASTQ Screen (v0.15.3), and a custom multi-modal MultiQC (v1.24.1) module evaluate quality and composition of a multi-modal single-cell
+sequencing experiment.</li>
+</ul>
+<h2 id="single-cell-multi-omics">Single-cell multi-omics<a class="headerlink" href="#single-cell-multi-omics" title="Permanent link">&para;</a></h2>
+<h3 id="cellranger-multi">Cellranger multi<a class="headerlink" href="#cellranger-multi" title="Permanent link">&para;</a></h3>
+<p>CERTOMICS allows for processing various combinations of gene expression and V(D)J libraries, with or without feature barcode libraries, across multiple samples derived from peripheral blood mononuclear cells (PBMCs). Specifically, it supports the analysis of common 10x Genomics single-cell (immune profiling) libraries using CellRanger Multi.</p>
+<h3 id="seurat-object-output">Seurat Object Output<a class="headerlink" href="#seurat-object-output" title="Permanent link">&para;</a></h3>
+<p>The output of this pipeline is a merged Seurat object containing multi-modal single-cell data (RNA, VDJ and ADT assays) along with extensive metadata on cell type identity, quality metrices, cell cycle, and clonotype information, which serves the purpose of enabling detailed characterization and quality assessment of diverse cell populations from multiple samples. For a detailed explanation please see: <a href="Documentation/output/#seurat-object">Seurat Output</a></p>
+<h2 id="quality-control">Quality Control<a class="headerlink" href="#quality-control" title="Permanent link">&para;</a></h2>
+<h3 id="car-specific-metrics">CAR-specific Metrics<a class="headerlink" href="#car-specific-metrics" title="Permanent link">&para;</a></h3>
+<p>Within a interactive summary webpage (see <a href="../../../images/pipelines/CERTOMICS/ExampleWebpage.png">Example</a>), CAR-specific quality control metrics are included. CAR-specific metrics are derived from two levels of data: ”Read-level” metrics, based on mapped sequencing reads and ”Count-level” metrics, based on CellRanger raw counts. </p>
+<ul>
+<li>Read-level metrics include coverage plots across the
+CAR construct, enabling assessment of read distribution
+and sequencing protocol performance (50 or 30), as well
+as absolute read counts per sample to evaluate transgene
+expression levels. Additionally, a comparison of kallisto-
+based estimated counts to alternative CAR isoforms can be
+included, serving as negative or internal controls to assess
+detection specificity.</li>
+<li>Count-level metrics provide biological insights by
+quantifying CAR-positive cell frequencies at different
+immune cell populations. This allows the assessment of
+patient-specific variability or comparison across different
+condition, e.g. before vs. after CAR expansion, as well as a
+negative control from CAR-negative cell populations.</li>
+</ul>
+<p>In addition to CAR-specific quality control, the webpage presents general GEX-specific statistics, including cell proportions, as well as VDJ sequencing statistics, such as clonotype composition for both T and B cells. These additional metrics provide insights into TCR/BCR diversity, expansion patterns, and immune repertoire changes, which are critical for understanding persistence, functionality, and immune cell interactions.</p>
+<p><img alt="CAR__metrics" src="../../../images/pipelines/CERTOMICS/CAR-QC.png" /></p>
+<h3 id="multi-qc-report">Multi-QC Report<a class="headerlink" href="#multi-qc-report" title="Permanent link">&para;</a></h3>
+<p>Provides an MultiQC overview of general quality metrics via <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/">FastQ-Screen</a> and <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a>:</p>
+<p><img alt="CAR__metrics" src="../../../images/pipelines/CERTOMICS/MultiQC.png" /></p>
+<h1 id="quickstart-guide">Quickstart guide<a class="headerlink" href="#quickstart-guide" title="Permanent link">&para;</a></h1>
+<h2 id="downloading-the-pipeline">Downloading the pipeline<a class="headerlink" href="#downloading-the-pipeline" title="Permanent link">&para;</a></h2>
+<p>To install the pipeline, simply download the Git repository via HTTP.</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/fraunhofer-izi/CERTOMICS.git
+</code></pre></div>
+<p>Before attempting to run the pipeline, ensure that Nextflow is installed and up-to-date (<code>version &gt;= 24.10.2</code>). If you use the pipeline with the Singularity containers (recommended via<code>-profile sigularity</code>), Singularity must be installed and included in PATH, as well.</p>
+<h2 id="supplying-data">Supplying data<a class="headerlink" href="#supplying-data" title="Permanent link">&para;</a></h2>
+<p>To provide all the necessary data (references, samples, etc.) a separate file is used. All values are captured in the YAML (or JSON) format in a so-called parameters file (or params-file) and passed to the pipeline with the <code>-params-file</code> flag.
+The parameters file should look something like this:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">gene_expression_reference</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/gex/reference&quot;</span>
+<span class="nt">vdj_reference</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/vdj/reference&quot;</span>
+<span class="nt">samples</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;sample_1&#39;</span>
+<span class="w">    </span><span class="nt">libraries</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fastq_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;sample_1_R&#39;</span>
+<span class="w">        </span><span class="nt">fastqs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/sample_1_R&quot;</span>
+<span class="w">        </span><span class="nt">feature_types</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Gene</span><span class="nv"> </span><span class="s">Expression&#39;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fastq_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;sample_1_B&#39;</span>
+<span class="w">        </span><span class="nt">fastqs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/sample_1_B&quot;</span>
+<span class="w">        </span><span class="nt">feature_types</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;VDJ-B&#39;</span>
+</code></pre></div>
+<p>A full explanation of the options you have and how to populate your own params-file can be found <a href="Documentation/params-file/">here</a>.</p>
+<h1 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h1>
+<p>To get a better understanding of what you can do with the pipeline and the options you have, check out the documentation</p>
+<ul>
+<li><a href="Documentation/params-file/">Params-file</a> with examples</li>
+<li><a href="Documentation/cli/">Command line arguments</a></li>
+<li><a href="Documentation/output/">Pipeline output</a></li>
+<li><a href="Documentation/reference_building/">How is the reference built</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/fraunhofer-izi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
