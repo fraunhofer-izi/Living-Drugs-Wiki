@@ -1,7 +1,7 @@
 # Reference Building
 
 !!! info
-    To understand how the parameters are defined and used, take a look at the decision-making process: [reference_building](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg)
+    **For guidance, take a look at the [decision tree](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg)**
 
 ## When is a reference built?
 
