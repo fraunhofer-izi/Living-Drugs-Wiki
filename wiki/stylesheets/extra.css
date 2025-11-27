@@ -5,8 +5,12 @@
 .md-header{
     background-color: #283566;
 }
+.md-tabs__link{
+    font-size: large;
+}
 .md-tabs{
     background-color: #A6A6A6;
+
 }
 .md-typeset a{
     color: #283566;
@@ -34,6 +38,7 @@
 .grid.cards a {
     display: block;
     padding: 20px;
+    margin: 10px; 
     border-radius: 12px;
     background: #f8f9fa;
     text-decoration: none;
@@ -44,12 +49,14 @@
     text-align: center;
     border-left: 6px solid #283566;
 }
+
 /* Hover effect */
 .grid.cards a:hover {
     background: #e0e0e0;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     border-left-color: #283566;
 }
+
 
 /* Make image in with .half-size only 75%*/
 .md-typeset .half-size {
@@ -59,14 +66,15 @@
     text-align: center !important;
     display: block !important;
 }
-.md-typeset .half-size img {
-    width: 100% !important; /* Ensures it scales properly */
-    display: block !important;
-    margin: auto !important;
-}
 .md-typeset .half-size figcaption {
     text-align: center !important;
     font-size: 1em !important;
     margin-top: 5px !important;
+}
+.md-typeset .left-size img {
+    width: 50% !important;
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
 }
 

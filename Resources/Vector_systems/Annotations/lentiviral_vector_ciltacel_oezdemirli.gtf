@@ -1,0 +1,12 @@
+vector	AddedGene	generic_feature	1	53	.	+	.	gene_id "delta_U3"; gene_name "delta_U3";
+vector	AddedGene	generic_feature	54	234	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
+vector	AddedGene	generic_feature	345	389	.	+	.	gene_id "HIV-1_psi_pack"; gene_name "HIV-1_psi_pack";
+vector	AddedGene	regulatory_region	903	1136	.	+	.	gene_id "RRE"; gene_name "RRE";
+vector	AddedGene	generic_feature	1631	1646	.	+	.	gene_id "cPPT"; gene_name "cPPT";
+vector	AddedGene	promoter	1932	3119	.	+	.	gene_id "EF1a_promoter"; gene_name "EF1a_promoter";
+vector	AddedGene	primer	3067	3087	.	+	.	gene_id "EF1a_fwd_primer"; gene_name "EF1a_fwd_primer";
+vector	AddedGene	ORF	3178	4644	.	+	.	gene_id "CAR"; gene_name "CAR";
+vector	AddedGene	generic_feature	4667	5242	.	+	.	gene_id "WPRE"; gene_name "WPRE";
+vector	AddedGene	generic_feature	5460	5512	.	+	.	gene_id "delta_U3"; gene_name "delta_U3";
+vector	AddedGene	generic_feature	5513	5693	.	+	.	gene_id "HIV-1_5_LTR"; gene_name "HIV-1_5_LTR";
+vector	AddedGene	generic_feature	5513	5693	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";

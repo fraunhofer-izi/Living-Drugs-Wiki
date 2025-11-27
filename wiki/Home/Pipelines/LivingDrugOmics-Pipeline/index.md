@@ -17,35 +17,38 @@
 </div>
 
 # What is LivingDrugOmics
-This Nextflow pipeline has been developed to support **single-cell multi-omics** for in-depth profiling of current **CAR T-cell** products. LivingDrugOmics enables thereby comprehensive immune profiling by supporting single-cell 10x Genomics technologies, such as gene expression (GEX) sequencing, cell surface protein detection, and V(D)J sequencing. Specific quality control metrics are incorporated for robust identification of CAR-positive cells.
+This Nextflow pipeline has been developed to support **single-cell multi-omics** for in-depth profiling of **CAR T-cell** products. The _LivingDrugOmics_ pipeline enables comprehensive immune profiling by supporting single-cell 10x Genomics technologies, such as gene expression (GEX) sequencing, cell surface protein detection, and V(D)J (TCR and BCR) sequencing. To reliably characterize CAR-positive T cells, the pipeline enables CAR detection based on a custom reference and incorporates specialized quality control metrics to ensure robust identification of CAR-positive cells. Please see 
 
-![Abb_CAR_T_cell_profiling.png](../../../images/pipelines/LivingDrugOmics/Abb_CAR_T_cell_profiling.png){.half-size}
-
-In addition, available sequence and annotation data on CAR constructs and vector systems are collected in our GitHub [repository](https://github.com/fraunhofer-izi/TODO/-/tree/main/Resources?ref_type=heads). This serves as a scientific [resource](../../Resources/index.md) and is designed to support the analysis and development of CAR T-cell therapies.
-
-## Single-cell multi-omics
-The _LivingDrugOmics_ pipeline enables comprehensive immune profiling by supporting single-cell 10x Genomics technologies, such as gene expression (GEX) sequencing, cell surface protein detection, and V(D)J (TCR and BCR) sequencing. To reliably identify CAR+ cells, the pipeline is provided with a custom CAR reference, enabling the detection and characterisation of CAR-positive cells.
+![Abb_CAR_T_cell_profiling.png](../../../images/pipelines/LivingDrugOmics/Abb_CAR_T_cell_profiling.ai.png){.half-size}
 
 ## Pipeline Overview
-- `Workflow: HANDLE_REFERENCES` - Depending on the libraries used (GEX, VDJ, ADT) and the CAR construct (FASTA, GTF), a custom gene expression reference (for CellRanger) can be created.
-- `Workflow: RUN_SECONDARY_ANALYSIS` - Executes CellRanger Multi-analysis and generates a merged, annotated Seurat object as well as CAR specific metrics.
+The pipeline is structured into three main processes: handling 10x data and libraries, performing core secondary analysis, and running quality control. The key feature of the pipeline is its ability to detect CAR-positive cells by incorporating a dedicated reference processing step. For this step, the user simply provide a CAR sequence file `.fasta` and CAR annotation file `.gtf`, for which CAR+ cells should be detected.For detailed explanation see: [References](https://david.schmidt.ribogitpages.izi.fraunhofer.de/living-drugs-wiki/Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/params-file/#references). Common CAR sequences and annotation information can be found in our [Resource](https://david.schmidt.ribogitpages.izi.fraunhofer.de/living-drugs-wiki/Home/Resources/).
+
+- `Workflow: HANDLE_REFERENCES` - Generates custom reference files for CellRanger based on the sequencing libraries (GEX, VDJ, ADT) and the CAR construct (FASTA, GTF) used.
+- `Workflow: RUN_SECONDARY_ANALYSIS` - Executes CellRanger multi and generates a merged, annotated Seurat object as well as CAR specific metrics.
 - `Workflow: RUN_QUALITY_CONTROL` - Quality control is performed using FastQC and FastQ-Screen. The results are merged using MultiQC.
 
-![DAG Graph](../../../images/pipelines/LivingDrugOmics/pipeline_dag/general_pipeline_dag.drawio.svg){.half-size}
+![DAG Graph](../../../images/pipelines/LivingDrugOmics/pipeline_dag/general_pipeline_dag.drawio.svg)
 
-## Seurat Object Output
-The output of this pipeline is a merged Seurat object containing multi-modal single-cell data (RNA, VDJ and ADT assays) along with extensive metadata on cell type identity, quality metrices, cell cycle, and clonotype information, which serves the purpose of enabling detailed characterization, classification, and quality assessment of diverse cell populations from multiple samples. For a detailed explanation please see: [Seurat Output](./Usage/output.md#seurat-object)
 
-## Quality control
-Specific quality control metrics are incorporated for quality control of single-cell data ([MultiQC](https://seqera.io/multiqc/)) and robust identification of CAR-positive cells.
+## Single-cell multi-omics
 
-### Multi-QC Report
-Provides an overview of general quality metrics via [FastQ-Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/):
+### Cellranger multi
+LivingDrugOmics allows for processing various combinations of gene expression and V(D)J libraries, with or without feature barcode libraries, across multiple samples derived from peripheral blood mononuclear cells (PBMCs). Specifically, it supports the analysis of common 10x Genomics single-cell (immune profiling) libraries using CellRanger Multi.
+
+### Seurat Object Output
+The output of this pipeline is a merged Seurat object containing multi-modal single-cell data (RNA, VDJ and ADT assays) along with extensive metadata on cell type identity, quality metrices, cell cycle, and clonotype information, which serves the purpose of enabling detailed characterization and quality assessment of diverse cell populations from multiple samples. For a detailed explanation please see: [Seurat Output](./Documentation/output.md#seurat-object)
+
+## Quality Control
 
 ### CAR-specific Metrics
-CAR-specific metrics include quality controls based on reads mapping to the specific CAR construct and Cellranger raw counts, including the percentage of CAR+ cells of all annotated T cells. Annotation is performed using the [scGate tool](https://academic.oup.com/bioinformatics/article/38/9/2642/6544581) with the PBMC model, ensuring identification and characterization of CAR+ T cell populations and other cell types.
+Within a interactive summary webpage (see [Example](../../../images/pipelines/LivingDrugOmics/ExampleWebpage.png)), CAR-specific quality control metrics are included. CAR-specific metrics are derived from two levels of data: ”Read-level” metrics, based on mapped sequencing reads and ”Count-level” metrics, based on CellRanger raw counts. Read-level metrics assess the quality of the sequencing protocol (5’ or 3’) by
+analyzing coverage across the CAR construct and absolute read counts per sample. Count-level metrics provide biological insights by quantifying CAR+ cell frequencies at both the total T cell level and specific T cell subpopulations. Annotation is performed using the [scGate tool](https://academic.oup.com/bioinformatics/article/38/9/2642/6544581) with the PBMC model, ensuring identification and characterization of CAR+ T cell populations and other cell types.
 
 ![CAR__metrics](../../../images/pipelines/LivingDrugOmics/CAR-QC-1.png)
+
+### Multi-QC Report
+Provides an MultiQC overview of general quality metrics via [FastQ-Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/):
 
 # Quickstart guide
 ## Downloading the pipeline
@@ -75,16 +78,12 @@ samples:
         feature_types: 'VDJ-B'
 ```
 
-A full explanation of the options you have and how to populate your own params-file can be found [here](./Usage/params-file.md).
-
-## Diving deeper
-To get a better understanding of what you can do with the pipeline and the options you have, check out the documentation
-
-- [Params-file](./Usage/params-file.md) with examples
-- [Command line arguments](./Usage/cli.md)
-- [Pipeline output](./Usage/output.md)
+A full explanation of the options you have and how to populate your own params-file can be found [here](./Documentation/params-file.md).
 
 # Documentation
-If you are interested in how things work, take a look at our documentation
+To get a better understanding of what you can do with the pipeline and the options you have, check out the documentation
 
+- [Params-file](./Documentation/params-file.md) with examples
+- [Command line arguments](./Documentation/cli.md)
+- [Pipeline output](./Documentation/output.md)
 - [How is the reference built](./Documentation/reference_building.md)

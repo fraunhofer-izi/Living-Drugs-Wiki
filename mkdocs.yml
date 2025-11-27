@@ -3,6 +3,7 @@ use_directory_urls: true
 docs_dir: wiki
 
 markdown_extensions:
+  - admonition
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -25,12 +26,11 @@ nav:
       - Home/Pipelines/index.md
       - LivingDrugOmics:
           - Home/Pipelines/LivingDrugOmics-Pipeline/index.md
-          - Specific Usage:
-              - Params File: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/params-file.md
-              - Command Line Arguments: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/cli.md
-              - Output: Home/Pipelines/LivingDrugOmics-Pipeline/Usage/output.md
           - Documentation:
+              - Params File: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/params-file.md
               - Reference building: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/reference_building.md
+              - Command Line Arguments: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/cli.md
+              - Output: Home/Pipelines/LivingDrugOmics-Pipeline/Documentation/output.md
   - Resources:
       - Home/Resources/index.md
       - CAR Constructs: Home/Resources/CAR-constructs.md

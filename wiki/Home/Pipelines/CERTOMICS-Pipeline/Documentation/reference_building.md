@@ -1,5 +1,8 @@
 # Reference Building
 
+!!! info
+    **For guidance, take a look at the [decision tree](../../../../images/pipelines/CERTOMICS/Pipeline_options.drawio.svg)**
+
 ## When is a reference built?
 
 Depending on the input parameters, the process checks whether a gene expression reference has already been built or needs to be built on the fly. If a prebuilt reference is available and the `--gene_expression_reference` parameter is set, the process uses it and skips reference generation. Otherwise, the pipeline proceeds to build a new reference based on the provided input.
