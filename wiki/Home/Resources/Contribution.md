@@ -51,19 +51,19 @@ Each CAR submission must include a `README.md` containing:
 1. **Fork the repository** on GitHub.
 2. Create a new folder inside the appropriate directory (one folder per CAR construct).
 3. Add the required files:
-   - `dna.fasta`
-   - `protein.fasta`
-   - `annotation.gtf`
-   - `README.md`
+    - `dna.fasta`
+    - `protein.fasta`
+    - `annotation.gtf`
+    - `README.md`
 4. Commit your changes with a descriptive message.
 5. Open a **pull request** to the main repository.
-   - Include a short summary of the construct and its source.
+    - Include a short summary of the construct and its source.
 6. The curatorial team will:
-   - Verify the sequence against the cited source
-   - Check annotation accuracy
-   - Review the README for completeness
-   - Request changes if necessary
-   - Approve and merge the contribution
+    - Verify the sequence against the cited source
+    - Check annotation accuracy
+    - Review the README for completeness
+    - Request changes if necessary
+    - Approve and merge the contribution
 
 ---
 
