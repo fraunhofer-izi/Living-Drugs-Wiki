@@ -2,6 +2,10 @@
 
 This repository supports the analysis and development of CAR-T cell therapies by providing curated sequence and annotation data for common FDA-approved and non-approved CAR products. For details on data sources (e.g. patents) and the annotation process, see the [Sequence Retrieval and Annotation Process](https://david.schmidt.ribogitpages.izi.fraunhofer.de/living-drugs-wiki/Home/Resources/Methods/) section. It is regularly updated to ensure access to the latest information in this rapidly advancing field.
 
+> **💡 Want to contribute?**  
+> We welcome community submissions of new CAR constructs.  
+> Please see the  [**Constribution to Resource**](./Contribution.md) for instructions on how to submit DNA sequences, annotations, and documentation via GitHub pull request.
+
 ## CAR Constructs
 
 **CAR constructs** — engineered gene sequences encoding chimeric antigen receptors — can differ significantly across therapies. These variations necessitate tailored approaches for the accurate detection of CAR-positive cells, for example through single-cell sequencing, and can substantially influence the function and behavior of CAR-T cells. **For more information see:** [**CAR constructs**](./CAR-constructs.md). This repository includes detailed nucleotide sequences and annotation data for CAR constructs from the latest publicly available CAR-T therapies.
