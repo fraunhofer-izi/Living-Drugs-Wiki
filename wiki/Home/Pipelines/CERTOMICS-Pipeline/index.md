@@ -24,11 +24,11 @@ This Nextflow-based pipeline offers enhanced **cert**ainty in immunophenotyping 
 ## Pipeline Overview
 The pipeline is structured into three main processes: handling 10x data and libraries, performing core secondary analysis, and running quality control. The key feature of the pipeline is its ability to detect CAR-positive cells by incorporating a dedicated reference processing step. For this step, the user simply provide a CAR sequence file `.fasta` and CAR annotation file `.gtf`, for which CAR+ cells should be detected. For detailed explanation see: [References](https://fraunhofer-izi.github.io/Living-Drugs-Wiki/Home/Pipelines/CERTOMICS-Pipeline/Documentation/reference_building/). Common CAR sequences and annotation information can be found in our [Resource](https://fraunhofer-izi.github.io/Living-Drugs-Wiki/Home/Resources/).
 
-- `Workflow: HANDLE_REFERENCES` - Generates custom reference files for  CellRanger based on the sequencing libraries (GEX, VDJ,
+- `Workflow: BUILD_CUSTOM_REFERENCE` - Generates custom reference files for  CellRanger based on the sequencing libraries (GEX, VDJ,
 ADT) and the CAR construct (FASTA, GTF) given.
-- `Workflow: RUN_SECONDARY_ANALYSIS` - Executes CellRanger multi and generates a merged, annotated Seurat object, and computes CAR-specific quality control metrics, with
+- `Workflow: SECONDARY_ANALYSIS ` - Executes CellRanger multi and generates a merged, annotated Seurat object, and computes CAR-specific quality control metrics, with
 results summarized in a dedicated webpage.
-- `Workflow: RUN_QUALITY_CONTROL` - Conducts quality control assessments
+- `Workflow: QUALITY_CONTROL ` - Conducts quality control assessments
 using FASTQC (v0.12.1) FASTQ Screen (v0.15.3), and a custom multi-modal MultiQC (v1.24.1) module evaluate quality and composition of a multi-modal single-cell
 sequencing experiment.
 
@@ -107,3 +107,4 @@ To get a better understanding of what you can do with the pipeline and the optio
 - [Command line arguments](./Documentation/cli.md)
 - [Pipeline output](./Documentation/output.md)
 - [How is the reference built](./Documentation/reference_building.md)
+- [Adding a custom process](./Documentation/custom_processes.md)
