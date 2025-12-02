@@ -1,7 +1,6 @@
 # Command Line Arguments
 When launching the pipeline, several options are available to further configure the execution through command-line arguments. These settings (excluding Nextflow-specific arguments starting with `-` instead of `--`) can also be defined in the [Params-file](./params-file.md), which can be used to document execution more thoroughly. However, if you prefer to keep the params-file minimal, using command-line arguments is a valid approach.
 
-## Available Arguments
 ### Profiles
 Profiles are a powerful tool for customizing how the pipeline is executed. They can be used to adjust the execution environment, such as utilizing HPC systems or enabling containerization for processes. There are three preconfigured profiles: `singularity`, `slurm` and `standard` which can be enabled using the `-profile` flag when launching Nextflow. You can also combine multiple profiles like so: 
 
@@ -30,22 +29,3 @@ If desired, it is possible to skip the Quality Control (QC) steps (or individual
 - `--skip_multiqc` - Flag to skip MultiQC
 
 - `--skip_qc` - Flag to skip all QC steps entirely
-
-### Config files
-The processes `MULTIQC` and `FASTQ_SCREEN` need configuration files to run properly. By default, they use the files defined in `assets/config` but they can be changed with their respective parameters
-
-- `--multiqc_config <path>`
-
-- `--fastq_screen_config <path>`
-
-**Important**: Working with FastQ-Screen databases within Nextflow can be tricky because you cannot access files outside of the project directory without staging them first. Because of this you have to move the databases into the `assets/fastqs_databases` directory and reference them relative to the project directory with the `${projectDir}` variable which is substituted at runtime (Using other variables will not work). See the default config `assets/config/fastqs_config.conf` for an example.
-
-### Experimental features
-
-CellRanger allows you to use a job scheduler like Slurm to distribute the subprocesses spawned by their pipelines. This can be used to significantly reduce runtime of the slow `CELLRANGER_MULTI` process. This feature is experimental and may cause pipelines running indefinitely without failing or processes being killed prematurely. For more information about cluster mode read [this](https://www.10xgenomics.com/support/software/cell-ranger/latest/advanced/cr-job-submission-mode) and [this](https://www.10xgenomics.com/support/software/cell-ranger/latest/advanced/cr-cluster-mode).
-
-- `--cellranger_disable_ui` - Flag to disable the Web-UI provided by the CellRanger processes (Safe to use)
-- `--cellranger_enable_cluster` - Flag to enable cluster mode
-- `--cellranger_cluster_template <path>` - Path to a `.template` file for your respective workload manager - default: `assets/cluster_templates/slurm.template`
-- `--cellranger_max_jobs` - Maximum amount of jobs that can be spawned by a single instance of the CellRanger process - default: 4
-- `--cellranger_mem_per_core` - Maximum amount of memory consumed per CPU
