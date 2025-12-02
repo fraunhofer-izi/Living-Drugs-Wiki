@@ -24,31 +24,49 @@ This Nextflow-based pipeline offers enhanced **cert**ainty in immunophenotyping 
 ## Pipeline Overview
 The pipeline is structured into three main processes: handling 10x data and libraries, performing core secondary analysis, and running quality control. The key feature of the pipeline is its ability to detect CAR-positive cells by incorporating a dedicated reference processing step. For this step, the user simply provide a CAR sequence file `.fasta` and CAR annotation file `.gtf`, for which CAR+ cells should be detected. For detailed explanation see: [References](https://fraunhofer-izi.github.io/Living-Drugs-Wiki/Home/Pipelines/CERTOMICS-Pipeline/Documentation/reference_building/). Common CAR sequences and annotation information can be found in our [Resource](https://fraunhofer-izi.github.io/Living-Drugs-Wiki/Home/Resources/).
 
-- `Workflow: BUILD_CUSTOM_REFERENCE` - Generates custom reference files for  CellRanger based on the sequencing libraries (GEX, VDJ,
-ADT) and the CAR construct (FASTA, GTF) given.
+- `Workflow: BUILD_CUSTOM_REFERENCE` - Generates custom reference files for  CellRanger based on the sequencing libraries (GEX, VDJ, ADT) and the CAR construct (FASTA, GTF) given.
 - `Workflow: SECONDARY_ANALYSIS ` - Executes CellRanger multi and generates a merged, annotated Seurat object, and computes CAR-specific quality control metrics, with
 results summarized in a dedicated webpage.
-- `Workflow: QUALITY_CONTROL ` - Conducts quality control assessments
-using FASTQC (v0.12.1) FASTQ Screen (v0.15.3), and a custom multi-modal MultiQC (v1.24.1) module evaluate quality and composition of a multi-modal single-cell
+- `Workflow: QUALITY_CONTROL ` - Conducts quality control assessments using FASTQC (v0.12.1) FASTQ Screen (v0.15.3), and a custom multi-modal MultiQC (v1.24.1) module evaluate quality and composition of a multi-modal single-cell
 sequencing experiment.
 
+## CAR-Specific Features
 
-## Single-cell multi-omics
+CERTOMICS offers several features specifically tailored to CAR-engineered cell products:
 
-### Cellranger multi
-CERTOMICS allows for processing various combinations of gene expression and V(D)J libraries, with or without feature barcode libraries, across multiple samples derived from peripheral blood mononuclear cells (PBMCs). Specifically, it supports the analysis of common 10x Genomics single-cell (immune profiling) libraries using CellRanger Multi.
+---
 
-### Seurat Object Output
-The output of this pipeline is a merged Seurat object containing multi-modal single-cell data (RNA, VDJ and ADT assays) along with extensive metadata on cell type identity, quality metrices, cell cycle, and clonotype information, which serves the purpose of enabling detailed characterization and quality assessment of diverse cell populations from multiple samples. For a detailed explanation please see: [Seurat Output](./Documentation/output.md#seurat-object)
+### 1. 🧬 CellRanger Multi  
+CERTOMICS supports processing diverse combinations of gene expression, V(D)J, and feature-barcode libraries across multiple samples.  
+It is fully compatible with **10x Genomics immune-profiling workflows** using **CellRanger Multi**.
+For more information see [CellRanger Output](./Documentation/output.md).
 
-## Quality Control
+---
 
-### CAR-specific Metrics
-Within a interactive summary webpage (see [Example](../../../images/pipelines/CERTOMICS/ExampleWebpage.png)), CAR-specific quality control metrics are included. CAR-specific metrics are derived from two levels of data: ”Read-level” metrics, based on mapped sequencing reads and ”Count-level” metrics, based on CellRanger raw counts. 
+### 2. 📊 Multi-Modal QC  
+A custom **multi-modal MultiQC module** enables cross-sample evaluation of sequencing quality and modality integration.
+Additionall quality control assessments can be done using [FastQ-Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) of sequencing data. 
+For more information see [Quality Control parameters](./Documentation/parameters.md#quality-control).
+
+---
+
+### 3. 🔍 CAR Transgene Detection  
+CERTOMICS includes a **dedicated reference-processing step** that identifies **CAR-positive cells** based on transgene expression.
+For more information see [Reference building](./Documentation/reference_building.md). 
+
+---
+
+### 4. 🧪 Merged Seurat Object  
+Provides a **merged Seurat object** containing multi-modal single-cell data (RNA, VDJ and ADT assays) along with extensive metadata on cell type identity, quality metrices, cell cycle, and clonotype information, which serves the purpose of enabling detailed characterization and quality assessment of diverse cell populations from multiple samples. For a detailed explanation please see: [Seurat Output](./Documentation/output.md#seurat-object)
+
+---
+
+### 5. 🌐 Interactive CAR-Specific QC Reports  
+CERTOMICS produces an **interactive HTML report** (see [Example](../../../images/pipelines/CERTOMICS/ExampleWebpage.png)) summarizing:
 
  - Read-level metrics include coverage plots across the
 CAR construct, enabling assessment of read distribution
-and sequencing protocol performance (50 or 30), as well
+and sequencing protocol performance (5' or 3'), as well
 as absolute read counts per sample to evaluate transgene
 expression levels. Additionally, a comparison of kallisto-
 based estimated counts to alternative CAR isoforms can be
@@ -65,10 +83,8 @@ In addition to CAR-specific quality control, the webpage presents general GEX-sp
 
 ![CAR__metrics](../../../images/pipelines/CERTOMICS/CAR-QC.png)
 
-### Multi-QC Report
-Provides an MultiQC overview of general quality metrics via [FastQ-Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/):
+---
 
-![CAR__metrics](../../../images/pipelines/CERTOMICS/MultiQC.png)
 
 # Quickstart guide
 ## Downloading the pipeline
