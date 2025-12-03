@@ -45,8 +45,7 @@ For more information see [CellRanger Output](./Documentation/output.md).
 
 ### 2. 📊 Multi-Modal QC  
 A custom **multi-modal MultiQC module** enables cross-sample evaluation of sequencing quality and modality integration.
-Additionall quality control assessments can be done using [FastQ-Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) of sequencing data. 
-For more information see [Quality Control parameters](./Documentation/parameters.md#quality-control).
+Additionall quality control assessments can be done using [FastQ-Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) of sequencing data.
 
 ---
 
@@ -97,30 +96,12 @@ git clone https://github.com/fraunhofer-izi/CERTOMICS.git
 Before attempting to run the pipeline, ensure that Nextflow is installed and up-to-date (`version >= 24.10.2`). If you use the pipeline with the Singularity containers (recommended via`-profile sigularity`), Singularity must be installed and included in PATH, as well.
 
 ## Supplying data
-To provide all the necessary data (references, samples, etc.) a separate file is used. All values are captured in the YAML (or JSON) format in a so-called parameters file (or params-file) and passed to the pipeline with the `-params-file` flag.
-The parameters file should look something like this:
-
-```YAML
-gene_expression_reference: "/path/to/gex/reference"
-vdj_reference: "/path/to/vdj/reference"
-samples:
-  - name: 'sample_1'
-    libraries:
-      - fastq_id: 'sample_1_R'
-        fastqs: "/path/to/sample_1_R"
-        feature_types: 'Gene Expression'
-      - fastq_id: 'sample_1_B'
-        fastqs: "/path/to/sample_1_B"
-        feature_types: 'VDJ-B'
-```
-
-A full explanation of the options you have and how to populate your own params-file can be found [here](./Documentation/params-file.md).
+To provide all the necessary data (references, samples, etc.) a separate file is used. All input values are captured in the YAML (or JSON) format in a so-called parameters file (or params-file) and passed to the pipeline with the `-params-file` flag. A full explanation of the options you have and how to populate your own params-file can be found [here](./Documentation/parameters.md).
 
 # Documentation
 To get a better understanding of what you can do with the pipeline and the options you have, check out the documentation
 
-- [Params-file](./Documentation/params-file.md) with examples
-- [Command line arguments](./Documentation/cli.md)
+- [Parameters](./Documentation/parameters.md) 
 - [Pipeline output](./Documentation/output.md)
 - [How is the reference built](./Documentation/reference_building.md)
 - [Adding a custom process](./Documentation/custom_processes.md)
