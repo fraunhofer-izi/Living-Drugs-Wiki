@@ -68,10 +68,10 @@ CERTOMICS produces an **interactive HTML report** (see [Example](../../../images
 CAR construct, enabling assessment of read distribution
 and sequencing protocol performance (5' or 3'), as well
 as absolute read counts per sample to evaluate transgene
-expression levels. Additionally, a comparison of kallisto-
-based estimated counts to alternative CAR isoforms can be
-included, serving as negative or internal controls to assess
-detection specificity.
+expression levels. Additionally, an optional validation step can
+be performed to conrm correct CAR construct identity
+by comparison to alternative CAR constructs, serving as
+internal controls to assess detection specicity.
  - Count-level metrics provide biological insights by
 quantifying CAR-positive cell frequencies at different
 immune cell populations. This allows the assessment of
