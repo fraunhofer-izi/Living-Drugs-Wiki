@@ -33,7 +33,6 @@ If you just need to add a process to the pipeline to include a tool you rely on,
 |Workflow input|`gexReference`, `vdjReference`, `featureReference`|References used by the `CELLRANGER_MULTI` process|
 |Workflow input|`carFasta`, `carGtf`|CAR-Construct files|
 |Process: `CELLRANGER_MULTI`|`CELLRANGER_MULTI.out.*`|Multiple relevant outputs produced by the `CELLRANGER_MULTI` process for each sample|
-|Process: `KALLISTO_QUANT`|`KALLISTO_QUANT.out`|Output produced by `kallisto quant`|
 |Process: `SEURAT_OBJECT`|`SEURAT_OBJECT.out`|Seurat object built based on the `CELLRANGER_MULTI` output|
 |Process: `CAR_METRICS`|`CAR_METRICS.out.*`|Multiple relevant outputs produced by the `CAR_METRICS` process|
 
