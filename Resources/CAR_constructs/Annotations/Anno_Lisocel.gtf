@@ -1,0 +1,10 @@
+lisocel	AddedGene	exon	1	57	.	+	.	gene_id "lisocel";transcript_id "lisocel";gene_name "lisocel";gene_type "protein_coding";transcript_type "protein_coding";exon_number 1; exon_id "SP"; 
+lisocel	AddedGene	exon	118	336	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 2; exon_id "IGv-1"; 
+lisocel	AddedGene	exon	490	732	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 3; exon_id "IGv-2"; 
+lisocel	AddedGene	exon	853	921	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 4; exon_id "CD28-TM"; 
+lisocel	AddedGene	exon	919	1047	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 5; exon_id "TNFRSF9_Cytoplasmic";
+lisocel	AddedGene	exon	1099	1368	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 6; exon_id "ITAMs-of-lisocels-CD3zeta"; 
+lisocel	AddedGene	exon	1456	1521	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 7; exon_id "CSF2RA";
+lisocel	AddedGene	exon	2008	2163	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 8; exon_id "FU-cleavage";
+lisocel	AddedGene	exon	2176	2325	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 9; exon_id "FU-cleavage";
+lisocel	AddedGene	exon	2455	2523	.	+	.	gene_id "lisocel"; transcript_id "lisocel"; gene_name "lisocel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 10; exon_id "EGFR-transmembrane";

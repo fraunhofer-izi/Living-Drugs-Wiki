@@ -1,0 +1,11 @@
+vector	AddedGene	generic_feature	54	234	.	+	.	gene_id "HIV-1_5_LTR"; gene_name "HIV-1_5_LTR";
+vector	AddedGene	generic_feature	54	234	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
+vector	AddedGene	generic_feature	345	389	.	+	.	gene_id "HIV-1_psi_pack"; gene_name "HIV-1_psi_pack";
+vector	AddedGene	gene	390	1013	.	+	.	gene_id "Gag_HIV_0_623"; gene_name "Gag_HIV_0_623";
+vector	AddedGene	regulatory_region	1065	1298	.	+	.	gene_id "RRE"; gene_name "RRE";
+vector	AddedGene	ORF	2105	4633	.	+	.	gene_id "CAR"; gene_name "CAR";
+vector	AddedGene	generic_feature	4686	5273	.	+	.	gene_id "WPRE"; gene_name "WPRE";
+vector	AddedGene	generic_feature	5346	5361	.	+	.	gene_id "cPPT"; gene_name "cPPT";
+vector	AddedGene	generic_feature	5346	5367	.	+	.	gene_id "U3PPT"; gene_name "U3PPT";
+vector	AddedGene	generic_feature	5416	5596	.	+	.	gene_id "HIV-1_5_LTR"; gene_name "HIV-1_5_LTR";
+vector	AddedGene	generic_feature	5416	5596	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";

@@ -37,7 +37,7 @@ The annotation process of CAR constructs and vector systems is desribed below in
 | **Tisacel** | Patent *US 9,499,629 B2* | SEQ ID NO: 8 | SEQ ID NO: 12; translated from DNA | SEQ ID NO: 1 |
 | **Axicel** | DrugBank: [Roberts et al.](https://doi.org/10.1080/10428194.2017.1387905) → [Kochenderfer et al.](https://doi.org/10.1097/CJI.0b013e3181ac6138) → GenBank *HM852952* | GenBank ID *HM852952* | Translated from DNA | _Not available_ |
 | **Hu19-CD28Z** | [Brudno et al.](https://pubmed.ncbi.nlm.nih.gov/31959992/) → NCBI  *MN698642.1* | NCBI entry *MN698642.1* | Translated from DNA | _Not available_ |
-
+| **Lisocel** | GSRS Record UNII 7K2YOJ14X0 | Selected from vector seq (2105:4633 0-index, predicted by: https://www.ncbi.nlm.nih.gov/orffinder/) Modification ID: 939TQL8M8R | GSRS 	Modification ID: E18VZQ3GB1 | GSRS 	Modification ID: 939TQL8M8R |
 
 ## Annotations (gtf)
 
