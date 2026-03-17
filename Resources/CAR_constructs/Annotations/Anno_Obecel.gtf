@@ -1,0 +1,6 @@
+obecel	AddedGene	exon	1	63	.	+	.	gene_id "obecel";transcript_id "obecel";gene_name "obecel";gene_type "protein_coding";transcript_type "protein_coding";exon_number 1; exon_id "SP"; 
+obecel	AddedGene	exon	112	357	.	+	.	gene_id "obecel"; transcript_id "obecel"; gene_name "obecel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 2; exon_id "IGv-1"; 
+obecel	AddedGene	exon	517	732	.	+	.	gene_id "obecel"; transcript_id "obecel"; gene_name "obecel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 3; exon_id "IGv-2"; 
+obecel	AddedGene	exon	931	921	.	+	.	gene_id "obecel"; transcript_id "obecel"; gene_name "obecel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 4; exon_id "CD8alpha-TM"; 
+obecel	AddedGene	exon	919	999	.	+	.	gene_id "obecel"; transcript_id "obecel"; gene_name "obecel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 5; exon_id "TNFRSF9_Cytoplasmic";
+obecel	AddedGene	exon	1180	1449	.	+	.	gene_id "obecel"; transcript_id "obecel"; gene_name "obecel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 6; exon_id "ITAMs-of-obecels-CD3zeta"; 
