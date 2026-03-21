@@ -9,6 +9,5 @@ vector	AddedGene	generic_feature	2177	2192	.	+	.	gene_id "cPPT"; gene_name "cPPT
 vector	AddedGene	ORF	2836	4302	.	+	.	gene_id "CAR"; gene_name "CAR (ORF frame 2)";
 vector	AddedGene	generic_feature	4333	4908	.	+	.	gene_id "WPRE"; gene_name "WPRE";
 vector	AddedGene	generic_feature	4989	5010	.	+	.	gene_id "U3PPT"; gene_name "U3PPT";
-vector	AddedGene	generic_feature	4989	5004	.	+	.	gene_id "cPPT"; gene_name "cPPT";
 vector	AddedGene	regulatory_region	5006	5058	.	+	.	gene_id "delta_U3"; gene_name "delta_U3";
 vector	AddedGene	generic_feature	5059	5239	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
