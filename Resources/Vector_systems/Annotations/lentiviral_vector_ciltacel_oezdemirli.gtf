@@ -8,5 +8,4 @@ vector	AddedGene	primer	3067	3087	.	+	.	gene_id "EF1a_fwd_primer"; gene_name "EF
 vector	AddedGene	ORF	3178	4644	.	+	.	gene_id "CAR"; gene_name "CAR";
 vector	AddedGene	generic_feature	4667	5242	.	+	.	gene_id "WPRE"; gene_name "WPRE";
 vector	AddedGene	generic_feature	5460	5512	.	+	.	gene_id "delta_U3"; gene_name "delta_U3";
-vector	AddedGene	generic_feature	5513	5693	.	+	.	gene_id "HIV-1_5_LTR"; gene_name "HIV-1_5_LTR";
 vector	AddedGene	generic_feature	5513	5693	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
