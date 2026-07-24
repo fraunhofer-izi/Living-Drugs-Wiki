@@ -1,0 +1,11 @@
+ciltacel	AddedGene	exon	1 70	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "EF1α_Promoter";
+ciltacel	AddedGene	exon	71	133	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8_SP";
+ciltacel	AddedGene	exon	134	490	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "VHH1";
+ciltacel	AddedGene	exon	491	505	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "G4S";
+ciltacel	AddedGene	exon	506	859	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "VHH2";
+ciltacel	AddedGene	exon	860	865	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "ThrSer";
+ciltacel	AddedGene	exon	866	1072	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD8_hinge+TM";
+ciltacel	AddedGene	exon	1073	1198	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "41BB_ICD";
+ciltacel	AddedGene	exon	1199	1537	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "CD3z";
+ciltacel	AddedGene	exon	1538	1812	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "WPRE";
+ciltacel	AddedGene	exon	1813	2366	.	+	.	gene_id "ciltacel"; transcript_id "ciltacel"; gene_name "ciltacel"; gene_type "protein_coding"; transcript_type "protein_coding"; exon_number 1; exon_id "3'UTR";

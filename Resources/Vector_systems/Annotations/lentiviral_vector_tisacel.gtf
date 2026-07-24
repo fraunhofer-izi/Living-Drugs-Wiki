@@ -9,7 +9,6 @@ vector	AddedGene	promoter	2696	2725	.	+	.	gene_id "lac_promoter"; gene_name "lac
 vector	AddedGene	primer	2739	2761	.	+	.	gene_id "M13_pUC_rev_primer"; gene_name "M13_pUC_rev_primer";
 vector	AddedGene	primer	2760	2778	.	+	.	gene_id "M13_reverse_primer"; gene_name "M13_reverse_primer";
 vector	AddedGene	promoter	2795	2814	.	+	.	gene_id "T3_promoter"; gene_name "T3_promoter";
-vector	AddedGene	generic_feature	3068	3248	.	+	.	gene_id "HIV-1_5_LTR"; gene_name "HIV-1_5_LTR";
 vector	AddedGene	generic_feature	3068	3248	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
 vector	AddedGene	generic_feature	3359	3403	.	+	.	gene_id "HIV-1_psi_pack"; gene_name "HIV-1_psi_pack";
 vector	AddedGene	generic_feature	3913	4146	.	+	.	gene_id "RRE"; gene_name "RRE";
@@ -18,10 +17,8 @@ vector	AddedGene	promoter	5195	6378	.	+	.	gene_id "EF1a_promoter"; gene_name "EF
 vector	AddedGene	primer	6326	6346	.	+	.	gene_id "EF1a_fwd_primer"; gene_name "EF1a_fwd_primer";
 vector	AddedGene	ORF	6391	7851	.	+	.	gene_id "CAR"; gene_name "CAR";
 vector	AddedGene	generic_feature	7860	8435	.	+	.	gene_id "WPRE"; gene_name "WPRE";
-vector	AddedGene	generic_feature	8516	8531	.	+	.	gene_id "cPPT"; gene_name "cPPT";
 vector	AddedGene	generic_feature	8516	8537	.	+	.	gene_id "U3PPT"; gene_name "U3PPT";
 vector	AddedGene	generic_feature	8533	8585	.	+	.	gene_id "delta_U3"; gene_name "delta_U3";
-vector	AddedGene	generic_feature	8586	8766	.	+	.	gene_id "HIV-1_5_LTR"; gene_name "HIV-1_5_LTR";
 vector	AddedGene	generic_feature	8586	8766	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
 vector	AddedGene	terminator	8841	8960	.	+	.	gene_id "SV40_PA_terminator"; gene_name "SV40_PA_terminator";
 vector	AddedGene	primer	8929	8948	.	+	.	gene_id "EBV_rev_primer"; gene_name "EBV_rev_primer";

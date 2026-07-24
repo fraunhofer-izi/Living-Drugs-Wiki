@@ -1,0 +1,13 @@
+vector	AddedGene	regulatory_region	2	578	.	+	.	gene_id "CMV_immearly_promoter"; gene_name "CMV immediate early promoter";
+vector	AddedGene	enhancer	81	368	.	+	.	gene_id "CAG_enhancer"; gene_name "CAG enhancer";
+vector	AddedGene	generic_feature	535	555	.	+	.	gene_id "CMV_fwd_primer"; gene_name "CMV forward primer";
+vector	AddedGene	generic_feature	579	598	.	+	.	gene_id "pCEP_fwd_primer"; gene_name "pCEP forward primer";
+vector	AddedGene	generic_feature	599	779	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
+vector	AddedGene	generic_feature	890	934	.	+	.	gene_id "HIV-1_psi_pack"; gene_name "HIV-1_psi_pack";
+vector	AddedGene	regulatory_region	1444	1677	.	+	.	gene_id "RRE"; gene_name "RRE";
+vector	AddedGene	generic_feature	2177	2192	.	+	.	gene_id "cPPT"; gene_name "cPPT";
+vector	AddedGene	ORF	2836	4302	.	+	.	gene_id "CAR"; gene_name "CAR (ORF frame 2)";
+vector	AddedGene	generic_feature	4333	4908	.	+	.	gene_id "WPRE"; gene_name "WPRE";
+vector	AddedGene	generic_feature	4989	5010	.	+	.	gene_id "U3PPT"; gene_name "U3PPT";
+vector	AddedGene	regulatory_region	5006	5058	.	+	.	gene_id "delta_U3"; gene_name "delta_U3";
+vector	AddedGene	generic_feature	5059	5239	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_name "truncHIV-1_3_LTR";
