@@ -7,7 +7,8 @@ vector	AddedGene	generic_feature	801	981	.	+	.	gene_id "truncHIV-1_3_LTR"; gene_
 vector	AddedGene	generic_feature	1092	1136	.	+	.	gene_id "HIV-1_psi_pack"; gene_name "HIV-1_psi_pack";
 vector	AddedGene	generic_feature	1636	1651	.	+	.	gene_id "cPPT"; gene_name "cPPT";
 vector	AddedGene	regulatory_region	2140	2373	.	+	.	gene_id "RRE"; gene_name "RRE";
-vector	AddedGene	ORF	3178	4644	.	+	.	gene_id "CAR"; gene_name "CAR";
+vector	AddedGene	regulatory_region	2706	3099	.	+	.	gene_id "MND_promoter"; gene_name "MND_promoter";
+vector	AddedGene	ORF	3125	4606	.	+	.	gene_id "CAR"; gene_name "CAR";
 vector	AddedGene	generic_feature	4666	4687	.	+	.	gene_id "U3PPT"; gene_name "U3PPT";
 vector	AddedGene	primer	4908	4890	.	-	.	gene_id "M13_reverse_primer"; gene_name "M13_reverse_primer";
 vector	AddedGene	primer	4929	4907	.	-	.	gene_id "M13_pUC_rev_primer"; gene_name "M13_pUC_rev_primer";
@@ -16,4 +17,3 @@ vector	AddedGene	gene	6275	5415	.	-	.	gene_id "Ampicillin"; gene_name "Ampicilli
 vector	AddedGene	promoter	6345	6317	.	-	.	gene_id "AmpR_promoter"; gene_name "AmpR_promoter";
 vector	AddedGene	primer	6504	6485	.	-	.	gene_id "SV40pro_F_primer"; gene_name "SV40pro_F_primer";
 vector	AddedGene	origin	6566	6489	.	-	.	gene_id "SV40_origin"; gene_name "SV40_origin";
-vector	AddedGene	promoter	6625	781	.	-	.	gene_id "CMV_immearly_promoter"; gene_name "CMV_immearly_promoter";
