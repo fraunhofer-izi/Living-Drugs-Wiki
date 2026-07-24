@@ -6,9 +6,25 @@ hide:
 
 # Sequence Retrieval and Annotation Process
 
+## Sources of Sequences
+
+| **CAR T Cell Product** | **Original Source** | **CAR Sequence (DNA)**  | **CAR Sequence (transcribed)** | **CAR Sequence (Protein)** | **Vector Sequence** |
+|------------------------|----------------------|--------------------------|-------------------------------|----------------------------|----------------------|
+| **Ciltacel** | Patent *WO2022116086A1* | SEQ ID NO. 9–16 | -- | SEQ ID NO:17; translated from DNA | _Not available_ |
+| **Ciltacel** | Patent *US20230270786A1* | SEQ ID NO. 9–16 | -- | Seq ID NO 17; translated from DNA | _Not available_ |
+| **Ciltacel (Oezdemirli et al.)** | Supplementary Figure S1, [Ozdemirli et al.](https://doi.org/10.1056/NEJMoa2401530) | Highlighted DNA sequence of CAR construct | -- | Translated from DNA | Vector sequence from 5'UTR to 3'UTR |
+| **Ciltacel (Braun et al.)** | [Braun et al.](https://www.nature.com/articles/s41591-025-03499-9) | Reverse engineered DNA sequence provided at [GitHub](https://github.com/fraunhofer-izi/Braun_et_al_2024/blob/main/code/wgs/realign_potential_insertions_segemehl/Ciltacel_CARpos_consensus_Braun_et_al.fasta) | -- | Translated from reverse engineered DNA | Full reverse engineered vector sequence provided at [GitHub](https://github.com/fraunhofer-izi/Braun_et_al_2024/blob/main/code/wgs/realign_potential_insertions_segemehl/Ciltacel_CARpos_consensus_Braun_et_al.fasta) |
+| **Ciltacel (Kluesner et al. 2026)** | [Kluesner et al. 2026](Publication) | -- | Supplementary Sequence 3 | Translated DNA sequence (longest ORF) | -- |
+| **Idecel** | Patent *WO2021091978A1* | Sequence No. 10 | -- | Sequence No. 9; translated from DNA | Sequence No. 36 and MND promoter from US20170051308A1.pdf |
+| **Tisacel** | Patent *US 9,499,629 B2* | SEQ ID NO: 8 | -- | SEQ ID NO: 12; translated from DNA | SEQ ID NO: 1 |
+| **Axicel** | DrugBank: [Roberts et al.](https://doi.org/10.1080/10428194.2017.1387905) → [Kochenderfer et al.](https://doi.org/10.1097/CJI.0b013e3181ac6138) → GenBank *HM852952* | GenBank ID *HM852952* | -- | Translated from DNA | _Not available_ |
+| **Lisocel** | GSRS Record UNII 7K2YOJ14X0 | Selected from vector seq (2105:4633 0-index, predicted by: https://www.ncbi.nlm.nih.gov/orffinder/) Modification ID: 939TQL8M8R | GSRS 	Modification ID: E18VZQ3GB1 | GSRS 	Modification ID: 939TQL8M8R |
+| **Obecel** | GSRS Record UNII 760HJB0YRD | Selected from vector seq (2836:4302_ 0-index, predicted by: https://www.ncbi.nlm.nih.gov/orffinder/) | -- | GSRS 	Modification ID: Y96BQ8R24J | GSRS 	Modification ID: 93SKR9HJ3R |
+| **Hu19-CD28Z** | [Brudno et al.](https://pubmed.ncbi.nlm.nih.gov/31959992/) → NCBI  *MN698642.1* | NCBI entry *MN698642.1* | -- | Translated from DNA | _Not available_ |
+
 ## Sequences (fasta)
 
-Sequence information on **DNA and protein sequences** of CAR T cell products (CAR constructs and vectors systems) has been collected from literature and patents (see [Sources of Sequences](#sources-of-sequences)). All DNA sequences were extracted from those sources using a Jupyter Notebook script (`translate_sequences.ipynb`). This process leverages a custom template matching approach implemented in the Python script `template_matching.py`. The method applies structural similarity (SSIM) to detect nucleotide templates (A, C, G, T) from .png images and accurately reconstruct them into a nucleotide sequence string. 
+Sequence information on **DNA and protein sequences** of CAR T cell products (CAR constructs and vectors systems) has been collected from literature and patents (see Table [Sources of Sequences](#sources-of-sequences)). All DNA sequences were extracted from those sources using a Jupyter Notebook script (`translate_sequences.ipynb`). This process leverages a custom template matching approach implemented in the Python script `template_matching.py`. The method applies structural similarity (SSIM) to detect nucleotide templates (A, C, G, T) from .png images and accurately reconstruct them into a nucleotide sequence string. 
 
 All DNA sequences were translated into protein sequences using the [Expasy Translate Tool](https://web.expasy.org/translate/) and saved as `*_protein_translated.fasta` files. For some CAR products, protein sequences were directly provided in the corresponding patents—these original sequences were included whenever available.
 
@@ -24,21 +40,6 @@ All DNA sequences were translated into protein sequences using the [Expasy Trans
 The annotation process of CAR constructs and vector systems is desribed below in the [Annotations section](#annotations-gtf).To ensure correct sequences, CAR constructs were manually re-check subsequently.
 
 ---
-
-### Sources of Sequences
-
-| **CAR T Cell Product** | **Original Source** | **CAR Sequence (DNA)** | **CAR Sequence (Protein)** | **Vector Sequence** |
-|------------------------|----------------------|--------------------------|-----------------------------|----------------------|
-| **Ciltacel** | Patent *WO2022116086A1* | SEQ ID NO. 9–16 | SEQ ID NO:17; translated from DNA | _Not available_ |
-| **Ciltacel** | Patent *US20230270786A1* | SEQ ID NO. 9–16 | Seq ID NO 17; translated from DNA | _Not available_ |
-| **Ciltacel (Oezdemirli et al.)** | Supplementary Figure S1, [Ozdemirli et al.](https://doi.org/10.1056/NEJMoa2401530) | Highlighted DNA sequence of CAR construct | Translated from DNA | Vector sequence from 5'UTR to 3'UTR |
-| **Ciltacel (Braun et al.)** | [Braun et al.](https://www.nature.com/articles/s41591-025-03499-9) | Reverse engineered DNA sequence provided at [GitHub](https://github.com/fraunhofer-izi/Braun_et_al_2024/blob/main/code/wgs/realign_potential_insertions_segemehl/Ciltacel_CARpos_consensus_Braun_et_al.fasta) | Translated from reverse engineered DNA | Full reverse engineered vector sequence provided at [GitHub](https://github.com/fraunhofer-izi/Braun_et_al_2024/blob/main/code/wgs/realign_potential_insertions_segemehl/Ciltacel_CARpos_consensus_Braun_et_al.fasta) |
-| **Idecel** | Patent *WO2021091978A1* | Sequence No. 10 | Sequence No. 9; translated from DNA | Sequence No. 36 and MND promoter from US20170051308A1.pdf |
-| **Tisacel** | Patent *US 9,499,629 B2* | SEQ ID NO: 8 | SEQ ID NO: 12; translated from DNA | SEQ ID NO: 1 |
-| **Axicel** | DrugBank: [Roberts et al.](https://doi.org/10.1080/10428194.2017.1387905) → [Kochenderfer et al.](https://doi.org/10.1097/CJI.0b013e3181ac6138) → GenBank *HM852952* | GenBank ID *HM852952* | Translated from DNA | _Not available_ |
-| **Lisocel** | GSRS Record UNII 7K2YOJ14X0 | Selected from vector seq (2105:4633 0-index, predicted by: https://www.ncbi.nlm.nih.gov/orffinder/) Modification ID: 939TQL8M8R | GSRS 	Modification ID: E18VZQ3GB1 | GSRS 	Modification ID: 939TQL8M8R |
-| **Obecel** | GSRS Record UNII 760HJB0YRD | Selected from vector seq (2836:4302_ 0-index, predicted by: https://www.ncbi.nlm.nih.gov/orffinder/) | GSRS 	Modification ID: Y96BQ8R24J | GSRS 	Modification ID: 93SKR9HJ3R |
-| **Hu19-CD28Z** | [Brudno et al.](https://pubmed.ncbi.nlm.nih.gov/31959992/) → NCBI  *MN698642.1* | NCBI entry *MN698642.1* | Translated from DNA | _Not available_ |
 
 ## Annotations (gtf)
 
