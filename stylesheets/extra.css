@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+.md-typeset {
+    font-family: 'Roboto', sans-serif;
+}
+.md-header{
+    background-color: #283566;
+}
+.md-tabs__link{
+    font-size: large;
+}
+.md-tabs{
+    background-color: #A6A6A6;
+
+}
+.md-typeset a{
+    color: #283566;
+}
+.md-footer{
+    background-color: #A6A6A6;
+}
+.md-typeset h1 {
+    font-weight: 400;
+}
+.md-typeset h3 {
+    color: var(--md-default-fg-color--light);
+}
+.md-typeset h4 {
+    text-transform: none !important;
+    font-weight: 300 !important;
+    font-size: 1.0rem !important; /* Change the size of H4 headings */
+}
+.md-typeset h5 {
+    margin: 0.85em 0;
+    text-transform: none !important;
+    font-size: 0.8rem !important; /* Change the size of H4 headings */
+}
+/* Style the cards */
+.grid.cards a {
+    display: block;
+    padding: 20px;
+    margin: 10px; 
+    border-radius: 12px;
+    background: #f8f9fa;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-left: 6px solid #283566;
+}
+
+/* Hover effect */
+.grid.cards a:hover {
+    background: #e0e0e0;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-left-color: #283566;
+}
+
+
+/* Make image in with .half-size only 75%*/
+.md-typeset .half-size {
+    width: 75% !important; /* Override fit-content */
+    max-width: 75% !important;
+    margin: auto !important;
+    text-align: center !important;
+    display: block !important;
+}
+.md-typeset .half-size figcaption {
+    text-align: center !important;
+    font-size: 1em !important;
+    margin-top: 5px !important;
+}
+.md-typeset .left-size img {
+    width: 50% !important;
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
