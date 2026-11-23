@@ -53,3 +53,10 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/fraunhofer-izi
   generator: false
+
+plugins:
+  - search
+  - privacy
+
+copyright: >
+  Copyright &copy; 2026 <a href="https://www.izi.fraunhofer.de/en/publishing-notes.html">Fraunhofer IZI</a>
